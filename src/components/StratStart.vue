@@ -41,12 +41,6 @@ export default {
   data: () => ({
     cards: [
       {
-        pic: require('../assets/ingame/buildings/icon_farmer.png'),
-        head: 'Beginner',
-        text: "Are you new to Town Star? Start here!",
-        link: '/strats/beginner'
-      },
-      {
         pic: require('../assets/ingame/products/icon_wool.png'),
         head: 'Wool Rush',
         text: `The classic Wool Rush strategy, explained so you can do it too!`,

@@ -1,60 +1,122 @@
 <template>
-  <!--FIRST card START-->
-  <div style='display: flex; justify-content: space-between'>
-    <v-card style="display: flex; flex-direction: row; margin: 0 auto;" max-height='30rem' class='mt-5' rounded>
-      <v-card-text style="padding: 2rem;">
-        <h1 class='mb-3' style="color: moccasin; opacity: 80%; font-weight: 800; font-size: 3.5rem">
-          Level up your gameplay
-        </h1>
-        <br>
-        <p>
-          Struggling to reach the top of the leaderboards? Look no further, TownBlaster will help your gameplay reach new heights.
-        </p>
-        <p>
-          TownBlaster has everything. The strats, the tricks, the stats.
-        </p>
-        <ul>
-          <li>
-            Check out <router-link to="/strats">Strategies</router-link> to get info on good starts, end game builds and other goodies.
-          </li>
-          <li>
-            Need to know the stats of a product or a building? Head on over to our <router-link to="/kbase">Knowledge Base</router-link>!
-          </li>
-          <li>
-            You are also able to check your item inventory in <router-link to="/wallet">Wallet</router-link>
-          </li>
-        </ul>
-        <v-btn style="background: #636853; float: right">
-          Go to Strategies
-        </v-btn>
-      </v-card-text>
-      <v-divider
-          dark
-          inset
-          vertical
-          style="margin: 1rem 0 1rem 0"
-      ></v-divider>
-      <v-card-text style="display: flex; justify-content: center; width: 40vh; padding: 0;">
-        <v-img
-            contain
-            src="../assets/ingame/buildings/icon_windmill.png"
-            alt="a windmill"
-        />
-      </v-card-text>
+  <div>
+    <v-card class='bigCard'>
+
+      <div class='theRow'>
+
+        <template v-for='(card, i) in cards'>
+          <div :key='i' class='theCard mx-5'>
+            <div class='top'>
+              <div class='circle'>
+                <v-img :src='card.pic'></v-img>
+              </div>
+            </div>
+            <div class='mid'>
+              <h2 style='color: grey; font-size: 2rem; margin-top: 0.3rem' class='amatic'>
+                {{ card.head }}
+              </h2>
+              <v-divider class='mx-5 my-3'></v-divider>
+              <p>
+                {{ card.text }}
+              </p>
+              <v-divider class='mx-5 my-3'></v-divider>
+
+              <v-btn style='background: #636853; color: #ffffff!important; font-size: 1rem; font-family: "Grotesk Bold", Helvetica, sans-serif;' :to="card.link">Go</v-btn>
+            </div>
+          </div>
+        </template>
+
+      </div>
     </v-card>
+    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 3rem;" to="/strats">
+      Back to Strategies
+    </v-btn>
   </div>
-  <!--FIRST card END-->
 </template>
 
 <script>
 export default {
-  name: "Endgame",
+  name: 'Endgame',
+  components: {  },
   data: () => ({
-    hello: true
+    cards: [
+      {
+        pic: require('../assets/ingame/products/icon_uniforms.png'),
+        head: 'Uniforms',
+        text: "A town dedicated to producing large amounts of Uniforms.",
+        link: '/strats/uniforms'
+      },
+      {
+        pic: require('../assets/ingame/products/icon_wool.png'),
+        head: 'Blue Steel',
+        text: `How to make the elusive Blue Steel? Here's an example.`,
+        link: '/strats/bluesteel'
+      },
+      {
+        pic: require('../assets/ingame/products/icon_wineBottle.png'),
+        head: 'Wine',
+        text: "A more recent classic; the Wine strategy.",
+        link: '/strats/wine'
+      }
+    ]
   })
 }
 </script>
 
-<style>
+<style scoped>
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 55%;
+  padding: 1rem;
+  border-radius: 25px;
+}
 
+.theRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.theCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 15rem;
+}
+
+.circle {
+  box-shadow: 0 0 15px 1px saddlebrown;
+  background: #636853;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+.mediumItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.v-divider--inset.v-divider--vertical {
+  margin: 25px 0;
+}
 </style>

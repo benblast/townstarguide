@@ -1,33 +1,39 @@
 <template>
-  <v-card class='bigCard'>
+  <div>
+    <h1 style="display: flex; justify-content: center; color: #ffffff99; font-size: 5rem;">
+      STRATEGIES
+    </h1>
+    <v-card class='bigCard'>
 
-    <div class='theRow'>
+      <div class='theRow'>
 
-      <template v-for='(card, i) in cards'>
-        <div :key='i' class='theCard mx-5'>
-          <div class='top'>
-            <div class='circle'>
-              <v-img :src='card.pic'></v-img>
+        <template v-for='(card, i) in cards'>
+          <div :key='i' class='theCard mx-5'>
+            <div class='top'>
+              <div class='circle'>
+                <v-img :src='card.pic'></v-img>
+              </div>
+            </div>
+            <div class='mid'>
+              <h2 style='color: grey; font-size: 2rem; margin-top: 0.3rem' class='amatic'>
+                {{ card.head }}
+              </h2>
+              <v-divider class='mx-5 my-3'></v-divider>
+              <p>
+                {{ card.text }}
+              </p>
+              <v-divider class='mx-5 my-3'></v-divider>
+
+              <v-btn style='background: #636853; color: #ffffff!important; font-size: 1rem; font-family: "Grotesk Bold", Helvetica, sans-serif;' :to="card.link">Go</v-btn>
             </div>
           </div>
-          <div class='mid'>
-            <h2 style='color: grey; font-size: 2rem; margin-top: 0.3rem' class='amatic'>
-              {{ card.head }}
-            </h2>
-            <v-divider class='mx-5 my-3'></v-divider>
-            <p>
-              {{ card.text }}
-            </p>
-            <v-divider class='mx-5 my-3'></v-divider>
+        </template>
 
-            <v-btn style='background: #636853; color: #ffffff!important; font-size: 1rem; font-family: "Grotesk Bold", Helvetica, sans-serif;' :to="card.link">Go</v-btn>
-          </div>
-        </div>
-      </template>
+      </div>
 
-    </div>
+    </v-card>
+  </div>
 
-  </v-card>
 </template>
 
 <script>
@@ -37,22 +43,28 @@ export default {
   data: () => ({
     cards: [
       {
-        pic: require('../assets/ingame/products/icon_wool.png'),
-        head: 'Start-Up Strats',
-        text: "What are the strategies to build up your Town quickly? Learn about it here.",
-        link: '/strats/startup'
+        pic: require('../assets/ingame/buildings/icon_farmer.png'),
+        head: 'Beginner',
+        text: "Are you new to Town Star? Start here!",
+        link: '/strats/beginner'
       },
       {
-        pic: require('../assets/ingame/products/icon_crudeOil.png'),
-        head: 'Gas Strats',
-        text: `Learn how to make Gasoline and how to fit it into your Town.`,
-        link: '/strats/gas'
+        pic: require('../assets/ingame/products/icon_wool.png'),
+        head: 'Start-Up Strats',
+        text: " Learn about strategies to build up your Town quickly.",
+        link: '/strats/startup'
       },
       {
         pic: require('../assets/ingame/products/icon_blueSteel.png'),
         head: 'End Game',
         text: "Check some examples of End Game strategies.",
         link: '/strats/endgame'
+      },
+      {
+        pic: require('../assets/ingame/products/icon_crudeOil.png'),
+        head: 'Gas Strats',
+        text: `Learn how to make Gasoline and how to fit it into your Town.`,
+        link: '/strats/gas'
       }
     ]
   })
@@ -64,7 +76,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 3rem;
   width: 55%;
   padding: 1rem;
   padding-bottom: 5rem;
@@ -73,7 +85,7 @@ export default {
 
 .theRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: -2rem;
 }
 
@@ -92,7 +104,7 @@ export default {
 .mid {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 15rem;
 }
 

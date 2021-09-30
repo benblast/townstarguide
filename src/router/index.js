@@ -10,6 +10,9 @@ import StratEnd from '../components/StratEnd'
 import StratBeginner from '../components/StratBeginner'
 import StratWool from '../components/StratWool'
 import StratSugar from '../components/StratSugar'
+import StratWine from '../components/StratWine'
+import StratBlueSteel from '../components/StratBlueSteel'
+import StratUniforms from "../components/StratUniforms"
 
 Vue.use(VueRouter)
 
@@ -63,6 +66,21 @@ const routes = [
     path: '/strats/sugarrush',
     name: 'Sugar Rush',
     component: StratSugar
+  },
+  {
+    path: '/strats/wine',
+    name: 'Wine Strategy',
+    component: StratWine
+  },
+  {
+    path: '/strats/bluesteel',
+    name: 'Blue Steel Strategy',
+    component: StratBlueSteel
+  },
+  {
+    path: '/strats/uniforms',
+    name: 'Uniforms Strategy',
+    component: StratUniforms
   }
 ]
 
