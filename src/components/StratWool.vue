@@ -16,7 +16,7 @@
             class="mb-3"
         ></v-img>
         <p>
-          The starting buildings are always the same:
+          First off.
         </p>
         <ul>
           <li>
