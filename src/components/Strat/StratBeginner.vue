@@ -11,7 +11,7 @@
           This is a typical forest map, with a mountain next to it.
         </p>
         <v-img
-            src="../assets/strats/start/starting_1.png"
+            src="../../assets/strats/start/starting_1.png"
             width="40rem"
             class="mb-3"
         ></v-img>
@@ -65,7 +65,7 @@
           Right now, one of the best strategies to get a decent amount of money is to get windmills. Start by getting a Lumberjack, a Wood Shed and a Wind Mill.
         </p>
         <v-img
-            src="../assets/strats/start/starting_2.png"
+            src="../../assets/strats/start/starting_2.png"
             width="40rem"
             class="mt-3"
         ></v-img>
@@ -90,13 +90,13 @@
           Everyone has a different setup and placement of their ponds to make this happen. It all depends on how you have placed the rest of your production facilities, so I will give you two examples that can give you inspiration.
         </p>
         <v-img
-            src="../assets/strats/start/starting_3.png"
+            src="../../assets/strats/start/starting_3.png"
             width="40rem"
             class="mt-3"
         ></v-img>
         Example of a crop operation.
         <v-img
-            src="../assets/strats/start/starting_4.png"
+            src="../../assets/strats/start/starting_4.png"
             width="40rem"
             class="mt-3"
         ></v-img>

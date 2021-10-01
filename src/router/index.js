@@ -4,15 +4,16 @@ import Home from '../views/Home.vue'
 import Strats from '../views/Strats.vue'
 import KBase from '../views/KBase.vue'
 import Wallet from '../views/Wallet.vue'
-import StratStart from "../components/StratStart"
-import StratGas from '../components/StratGas'
-import StratEnd from '../components/StratEnd'
-import StratBeginner from '../components/StratBeginner'
-import StratWool from '../components/StratWool'
-import StratSugar from '../components/StratSugar'
-import StratWine from '../components/StratWine'
-import StratBlueSteel from '../components/StratBlueSteel'
-import StratUniforms from "../components/StratUniforms"
+import StratStart from "../components/Strat/StratStart"
+import StratGas from '../components/Strat/StratGas'
+import StratEnd from '../components/Strat/StratEnd'
+import StratBeginner from '../components/Strat/StratBeginner'
+import StratWool from '../components/Strat/StratWool'
+import StratSugar from '../components/Strat/StratSugar'
+import StratWine from '../components/Strat/StratWine'
+import StratBlueSteel from '../components/Strat/StratBlueSteel'
+import StratUniforms from "../components/Strat/StratUniforms"
+import KbaseBuildings from "../components/KbaseBuildings"
 
 Vue.use(VueRouter)
 
@@ -81,6 +82,11 @@ const routes = [
     path: '/strats/uniforms',
     name: 'Uniforms Strategy',
     component: StratUniforms
+  },
+  {
+    path: '/kbase/buildings',
+    name: 'Buildings',
+    component: KbaseBuildings
   }
 ]
 

@@ -42,6 +42,7 @@
       </div>
     </v-sheet>
     <v-btn @click="getItemBalances">Itemz?</v-btn>
+    <v-btn @click="test">test</v-btn>
   </div>
 </template>
 
@@ -63,6 +64,10 @@ export default {
     }
   },
   methods: {
+    async test() {
+      const ass = await axios.get("https://tokens.gala.games/sandbox-games/town-star/beta/town-star-beta-key.json")
+      await console.log(ass.data)
+    },
     async getAccount () {
       let accounts = await window.ethereum
           .request({ method: 'eth_accounts' })
@@ -209,7 +214,11 @@ export default {
 
       async function get_json(url) {
         try {
-          const response = await axios.get(url);
+          const response = await axios.get(url, {
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+            }
+          });
           return response.data;
         } catch (error) {
           console.log(error.response);

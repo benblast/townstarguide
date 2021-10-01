@@ -41,19 +41,19 @@ export default {
   data: () => ({
     cards: [
       {
-        pic: require('../assets/ingame/products/icon_uniforms.png'),
+        pic: require('../../assets/ingame/products/icon_uniforms.png'),
         head: 'Uniforms',
         text: "A town dedicated to producing large amounts of Uniforms.",
         link: '/strats/uniforms'
       },
       {
-        pic: require('../assets/ingame/products/icon_wool.png'),
+        pic: require('../../assets/ingame/products/icon_wool.png'),
         head: 'Blue Steel',
         text: `How to make the elusive Blue Steel? Here's an example.`,
         link: '/strats/bluesteel'
       },
       {
-        pic: require('../assets/ingame/products/icon_wineBottle.png'),
+        pic: require('../../assets/ingame/products/icon_wineBottle.png'),
         head: 'Wine',
         text: "A more recent classic; the Wine strategy.",
         link: '/strats/wine'

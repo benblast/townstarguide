@@ -41,13 +41,13 @@ export default {
   data: () => ({
     cards: [
       {
-        pic: require('../assets/ingame/products/icon_wool.png'),
+        pic: require('../../assets/ingame/products/icon_wool.png'),
         head: 'Wool Rush',
         text: `The classic Wool Rush strategy, explained so you can do it too!`,
         link: '/strats/woolrush'
       },
       {
-        pic: require('../assets/ingame/products/icon_sugar.png'),
+        pic: require('../../assets/ingame/products/icon_sugar.png'),
         head: 'Sugar Rush',
         text: "Alternative old-school strategy that utilizes Wind Mills to spam Sugar/Flour!",
         link: '/strats/sugarrush'
