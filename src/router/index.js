@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Strats from '../views/Strats.vue'
 import KBase from '../views/KBase.vue'
-import Wallet from '../views/Wallet.vue'
 import StratStart from "../components/Strat/StratStart"
 import StratGas from '../components/Strat/StratGas'
 import StratEnd from '../components/Strat/StratEnd'
@@ -32,11 +31,6 @@ const routes = [
     path: '/kbase',
     name: 'Knowledge Base',
     component: KBase
-  },
-  {
-    path: '/wallet',
-    name: 'Wallet',
-    component: Wallet
   },
   {
     path: '/strats/startup',

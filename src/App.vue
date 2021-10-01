@@ -23,13 +23,14 @@
       <v-tabs
           centered
           color="grey darken-1"
-          class="menu-tabs"
+          class=""
       >
         <v-tab
             v-for="(item, i) in tabs"
             :key="i"
             :to="item.to"
             :icon="item.icon"
+            class="menu-tabs"
         >
           <div class="">
             <v-icon
@@ -75,18 +76,16 @@ export default {
         icon: 'mdi-campfire',
         title: 'Knowledge Base',
         to: '/kbase',
-      },
-      {
-        icon: 'mdi-wallet',
-        title: 'Wallet',
-        to: '/wallet',
-      },
+      }
     ]
   }),
 };
 </script>
 
 <style>
+.menu-tabs {
+  width: 15rem;
+}
 @font-face {
   font-family: "Grotesk";
   src: local("Grotesk"),
@@ -153,6 +152,6 @@ ul {
 }
 
 .spacer {
-  width: 40rem;
+  width: 37rem;
 }
 </style>
