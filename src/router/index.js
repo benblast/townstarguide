@@ -13,6 +13,7 @@ import StratWine from '../components/Strat/StratWine'
 import StratBlueSteel from '../components/Strat/StratBlueSteel'
 import StratUniforms from "../components/Strat/StratUniforms"
 import KbaseBuildings from "../components/KbaseBuildings"
+import KbaseProducts from "../components/KbaseProducts";
 
 Vue.use(VueRouter)
 
@@ -81,6 +82,11 @@ const routes = [
     path: '/kbase/buildings',
     name: 'Buildings',
     component: KbaseBuildings
+  },
+  {
+    path: '/kbase/products',
+    name: 'Buildings',
+    component: KbaseProducts
   }
 ]
 

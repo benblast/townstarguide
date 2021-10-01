@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; color: #ffffff99">
+    <h1 style="display: flex; justify-content: center; color: #ffffff99; font-size: 3rem;">
       Knowledge Base
     </h1>
     <v-card class='bigCard'>
@@ -31,9 +31,6 @@
 
       </div>
     </v-card>
-    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 3rem;" to="/strats">
-      Back to Strategies
-    </v-btn>
   </div>
 </template>
 
@@ -54,12 +51,6 @@ export default {
         head: 'Products',
         text: "All products and their stats are listed here.",
         link: '/kbase/products'
-      },
-      {
-        pic: require('../assets/ingame/buildings/icon_farmBot.png'),
-        head: 'Blockchain',
-        text: "Alternative old-school strategy that utilizes Wind Mills to spam Sugar/Flour!",
-        link: '/kbase/bchain'
       }
     ]
   })

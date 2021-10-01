@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; color: #ffffff99; font-size: 5rem;">
+    <h1 style="display: flex; justify-content: center; color: #ffffff99; font-size: 3rem;">
       STRATEGIES
     </h1>
     <v-card class='bigCard'>

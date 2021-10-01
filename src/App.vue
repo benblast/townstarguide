@@ -23,7 +23,6 @@
       <v-tabs
           centered
           color="grey darken-1"
-          class=""
       >
         <v-tab
             v-for="(item, i) in tabs"
@@ -63,14 +62,14 @@ export default {
   data: () => ({
     tabs: [
       {
-        icon: 'mdi-tower-fire',
-        title: 'Home',
-        to: '/',
-      },
-      {
         icon: 'mdi-skull-crossbones-outline',
         title: 'Strategies',
         to: '/strats',
+      },
+      {
+        icon: 'mdi-tower-fire',
+        title: 'Home',
+        to: '/',
       },
       {
         icon: 'mdi-campfire',
@@ -85,6 +84,7 @@ export default {
 <style>
 .menu-tabs {
   width: 15rem;
+  padding-top: 0.75rem!important;
 }
 @font-face {
   font-family: "Grotesk";
@@ -152,6 +152,6 @@ ul {
 }
 
 .spacer {
-  width: 37rem;
+  width: 40rem;
 }
 </style>
