@@ -66,7 +66,6 @@
               </div>
               <v-divider class='mx-5 my-3'></v-divider>
 
-              <v-btn style='background: #636853; color: #ffffff!important; font-size: 1rem; font-family: "Grotesk Bold", Helvetica, sans-serif;' :to="card.link">Go</v-btn>
             </div>
           </div>
         </template>
@@ -124,6 +123,10 @@ export default {
 </script>
 
 <style scoped>
+div {
+  font-family: "Grotesk", Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
 .bigCard {
   display: flex;
   flex-direction: column;

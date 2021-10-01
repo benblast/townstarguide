@@ -96,6 +96,10 @@ export default {
 </script>
 
 <style scoped>
+div {
+  font-family: "Grotesk", Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
 .bigCard {
   display: flex;
   flex-direction: column;
@@ -106,7 +110,7 @@ export default {
 
 .theRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .theCard {
