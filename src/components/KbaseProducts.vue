@@ -18,11 +18,23 @@
             </v-img>
 
             <template v-for="(item, i) in activeItem">
-              <div style="width: 100%;" :key="i" v-if="i === 'CityPoints' || i === 'CityPrice' || i === 'Req1' || i === 'Req2' || i === 'Req3'">
-                <ul style="list-style: none; display: flex; flex-direction: row; width: 100%;">
-                  <li style="width: 50%; text-align: right; margin: 0 1rem;">{{ i }}</li>
-                  <li style="color: gold; width: 50%; text-align: left; margin: 0 1rem; word-break: break-all">{{ item }}</li>
-                </ul>
+              <div style="width: 100%;" :key="i" v-if="i === 'CityPoints' || i === 'CityPrice' || i === 'Req1'">
+                <template v-if="i === 'CityPoints' || i === 'CityPrice'">
+                  <ul style="list-style: none; display: flex; flex-direction: row; width: 100%;">
+                    <li style="width: 50%; text-align: right; margin: 0 1rem;">{{ i }}</li>
+                    <li style="color: gold; width: 50%; text-align: left; margin: 0 1rem; word-break: break-all">{{ item }}</li>
+                  </ul>
+                </template>
+                <template v-else>
+
+                  <ul style="list-style: none; display: flex; flex-direction: row; align-items: center; width: 100%;">
+                    <li>Requirements</li>
+                    <li style="color: gold; width: 50%; margin: 0 1rem; word-break: break-all">{{ activeItem.Value1 }} {{ activeItem.Req1 }}</li>
+                    <li style="color: gold; width: 50%; margin: 0 1rem; word-break: break-all">{{ activeItem.Value2 }} {{ activeItem.Req2 }}</li>
+                    <li style="color: gold; width: 50%; margin: 0 1rem; word-break: break-all">{{ activeItem.Value3 }} {{ activeItem.Req3 }}</li>
+                  </ul>
+                </template>
+
               </div>
 
             </template>
