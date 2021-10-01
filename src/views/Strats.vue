@@ -50,7 +50,7 @@ export default {
       },
       {
         pic: require('../assets/ingame/products/icon_wool.png'),
-        head: 'Start-Up Strats',
+        head: 'Start-Up',
         text: " Learn about strategies to build up your Town quickly.",
         link: '/strats/startup'
       },
