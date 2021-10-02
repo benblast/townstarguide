@@ -76,7 +76,7 @@
               <div class="building-types">
                 <template v-for="(item, i) in recipes">
 
-                  <v-tooltip bottom :key="i">
+                  <v-tooltip right nudge-left="150" :key="i">
                     <template v-slot:activator="{ on, attrs }">
                       <div v-bind="attrs" v-on="on" @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
                         {{ i }}
