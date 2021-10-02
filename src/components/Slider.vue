@@ -10,7 +10,6 @@
       <v-carousel-item
           v-for="(item, i) in slides"
           :key="i"
-          class="displayer"
       >
         <v-sheet
             :color="colors[i]"
@@ -21,20 +20,24 @@
               align="center"
               justify="center"
           >
-            <div class="nftInfo">
-              <div class="nftText">
-                <h1 class="fonten specialSauceText">
-                  {{ item.name }}
-                </h1>
-                <p>{{ item.descr }}</p>
+            <router-link :to="item.link">
+              <div class="nftInfo">
+                <div class="nftText" style="margin-right: 1rem">
+                  <h1 class="fonten specialSauceText">
+                    {{ item.name }}
+                  </h1>
+                  <p>{{ item.descr }}</p>
+                </div>
+                <v-img
+                    :src="item.url"
+                    width="10rem"
+                    height="10rem"
+                    eager
+                    style="margin-left: 1rem"
+                />
               </div>
-              <v-img
-                  :src="item.url"
-                  width="10rem"
-                  height="10rem"
-                  eager
-              />
-            </div>
+            </router-link>
+
           </v-row>
         </v-sheet>
       </v-carousel-item>
@@ -57,26 +60,36 @@ export default {
     ],
     slides: [
       {
+        name: 'Changelog',
+        url: require("../assets/ingame/buildings/icon_nuclearEngineer.png"),
+        descr: 'Latest changelogs displaying the current meta.',
+        link: '/changelog'
+      },
+      {
         name: 'Gas Troubles?',
         url: require("../assets/ingame/products/icon_crudeOil.png"),
-        descr: 'Who is talking about oil, bitch? You cookin?'
+        descr: "This oil is not for cookin'!",
+        link: '/strats/gas'
       },
       {
         name: 'Quick Starts',
         url: require("../assets/ingame/buildings/icon_windPump.png"),
-        descr: "Blast past everyone else with these trips and tricks."
+        descr: "Blast past everyone else with these trips and tricks.",
+        link: '/strats/startup'
       },
       {
         name: 'Knowledge',
         url: require("../assets/ingame/buildings/icon_cakery.png"),
-        descr: "Need info on particular crafts and buildings?"
+        descr: "Need info on particular crafts and buildings?",
+        link: '/kbase'
       }
     ]
   }),
 }
 </script>
 
-<style>
+<style scoped>
+
 .fonten {
   font-family: "Grotesk", monospace, sans-serif;
   font-size: 4rem;
@@ -87,10 +100,15 @@ export default {
   width: 100%;
 }
 
+.displayer {
+  width: 100%;
+}
+
 .nftInfo {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff99;
 }
 
 .nftInfo img {

@@ -15,6 +15,7 @@ import StratUniforms from "../components/Strat/StratUniforms"
 import KbaseBuildings from "../components/KbaseBuildings"
 import KbaseProducts from "../components/KbaseProducts"
 import Visualizer from '../views/Visualizer'
+import Changelog from "../views/Changelog"
 
 Vue.use(VueRouter)
 
@@ -93,6 +94,11 @@ const routes = [
     path: '/visualizer',
     name: 'Visualizer',
     component: Visualizer
+  },
+  {
+    path: '/changelog',
+    name: 'Changelog',
+    component: Changelog
   }
 ]
 
