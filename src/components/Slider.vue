@@ -22,7 +22,7 @@
           >
             <router-link :to="item.link">
               <div class="nftInfo">
-                <div class="nftText" style="margin-right: 1rem">
+                <div class="nftText" style="margin-right: .51rem">
                   <h1 class="fonten specialSauceText">
                     {{ item.name }}
                   </h1>
@@ -33,7 +33,7 @@
                     width="10rem"
                     height="10rem"
                     eager
-                    style="margin-left: 1rem"
+                    style="margin-left: 1.5rem"
                 />
               </div>
             </router-link>
