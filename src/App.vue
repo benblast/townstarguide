@@ -31,7 +31,7 @@
             :icon="item.icon"
             class="menu-tabs"
         >
-          <div class="">
+          <div class="tab">
             <v-icon
                 size="50"
                 color="#FFFFFF99"
@@ -153,5 +153,32 @@ ul {
 
 .spacer {
   width: 40rem;
+}
+
+@media (max-width: 1200px) {
+  .logoText {
+    display: none;
+  }
+
+  .logoWrapper {
+    width: 1rem;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+  .menu-tabs {
+    width: auto;
+  }
+  .tab {
+
+    width: 100%;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .spacer {
+    width: 1rem;
+  }
 }
 </style>
