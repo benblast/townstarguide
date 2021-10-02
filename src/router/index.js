@@ -13,7 +13,8 @@ import StratWine from '../components/Strat/StratWine'
 import StratBlueSteel from '../components/Strat/StratBlueSteel'
 import StratUniforms from "../components/Strat/StratUniforms"
 import KbaseBuildings from "../components/KbaseBuildings"
-import KbaseProducts from "../components/KbaseProducts";
+import KbaseProducts from "../components/KbaseProducts"
+import Visualizer from '../views/Visualizer'
 
 Vue.use(VueRouter)
 
@@ -87,6 +88,11 @@ const routes = [
     path: '/kbase/products',
     name: 'Products',
     component: KbaseProducts
+  },
+  {
+    path: '/visualizer',
+    name: 'Visualizer',
+    component: Visualizer
   }
 ]
 

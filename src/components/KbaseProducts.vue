@@ -66,9 +66,15 @@
               <v-divider class='mx-5 mb-3 mt-5'></v-divider>
               <div class="building-types">
                 <template v-for="(item, i) in recipes">
-                  <div @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
-                    {{ i }}
-                  </div>
+
+                  <v-tooltip bottom :key="i">
+                    <template v-slot:activator="{ on, attrs }">
+                      <div v-bind="attrs" v-on="on" @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
+                        {{ i }}
+                      </div>
+                    </template>
+                    <span>Important shizz here</span>
+                  </v-tooltip>
                 </template>
               </div>
             </div>

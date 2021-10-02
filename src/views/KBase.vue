@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: 'Starting Strats',
+  name: 'KBase',
   components: {  },
   data: () => ({
     cards: [
