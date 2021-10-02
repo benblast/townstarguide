@@ -166,6 +166,7 @@ div {
 
 .buildingButton {
   cursor: pointer;
+  width: 33%;
 }
 .buildingButton:hover {
   color: gold;
@@ -176,5 +177,6 @@ div {
   flex-wrap: wrap;
   align-items: center;
   height: 30rem;
+  width: 100%;
 }
 </style>
