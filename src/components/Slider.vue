@@ -30,8 +30,8 @@
                 </div>
                 <v-img
                     :src="item.url"
-                    width="10rem"
-                    height="10rem"
+                    min-width="15rem"
+                    max-width="15rem"
                     eager
                     class="nftImg"
                 />
@@ -61,7 +61,7 @@ export default {
     slides: [
       {
         name: 'Changelog',
-        url: require("../assets/ingame/buildings/icon_nuclearEngineer.png"),
+        url: require("../assets/ingame/buildings/icon_nuclearPower.png"),
         descr: 'Latest changelogs displaying the current meta.',
         link: '/changelog'
       },
@@ -94,7 +94,6 @@ export default {
   font-family: "Grotesk", monospace, sans-serif;
   font-size: 4rem;
   line-height: 4rem;
-  z-index: 2!important;
 }
 .nftCarousel {
   width: 100%;
@@ -112,12 +111,9 @@ export default {
 }
 
 .nftImg {
-  z-index: 0;
-  margin-left: 1.5rem!important;
 }
 
 .nftText {
   max-width: 25vh;
-  margin-right: 1.5rem!important;
 }
 </style>
