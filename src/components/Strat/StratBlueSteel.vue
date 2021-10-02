@@ -120,7 +120,7 @@
 
 <script>
 export default {
-  name: 'Blue Steel',
+  name: 'BlueSteel',
   data: () => ({
     hello: true
   })

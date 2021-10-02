@@ -120,7 +120,7 @@
 
 <script>
 export default {
-  name: 'Sugar Rush',
+  name: 'SugarRush',
   data: () => ({
     hello: true
   })

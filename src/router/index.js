@@ -85,7 +85,7 @@ const routes = [
   },
   {
     path: '/kbase/products',
-    name: 'Buildings',
+    name: 'Products',
     component: KbaseProducts
   }
 ]

@@ -120,7 +120,7 @@
 
 <script>
 export default {
-  name: 'Start-Up Strats',
+  name: 'StartupStrats',
   data: () => ({
     hello: true
   })
