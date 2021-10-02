@@ -19,12 +19,9 @@
 
             <div style="display: flex; width: 100%; justify-content: center">
               <div style="display: flex; flex-direction: column; justify-content: center; width: 9rem;">
-
                 <div class="key">City Points</div>
                 <div class="key">City Price</div>
-
                 <div class="key">Req1</div>
-
                 <div class="key">Req2</div>
                 <div class="key">Req3</div>
                 <div class="key">Time1</div>
@@ -35,7 +32,6 @@
               <div style="display: flex; flex-direction: column; justify-content: center; width: 9rem;">
                 <div class="gold">{{ activeItem.CityPoints }}</div>
                 <div class="gold">{{ activeItem.CityPrice }}</div>
-
                 <div class="gold">{{ activeItem.Value1 }} {{ activeItem.Req1 }}</div>
                 <div class="gold">{{ activeItem.Value2 }} {{ activeItem.Req2 }}</div>
                 <div class="gold">{{ activeItem.Value3 }} {{ activeItem.Req3 }}</div>
@@ -43,7 +39,6 @@
                 <div class="gold">{{ activeItem.Time1 }}</div>
                 <div class="gold">{{ activeItem.Time2 }}</div>
                 <div class="gold">{{ activeItem.Time3 }}</div>
-
               </div>
             </div>
 

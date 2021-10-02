@@ -1,44 +1,46 @@
 <template>
-  <v-carousel
-      hide-delimiters
-      continuous
-      cycle
-      interval=8000
-      height="50vh"
-      class="nftCarousel"
-  >
-    <v-carousel-item
-        v-for="(item, i) in slides"
-        :key="i"
-        class="displayer"
+  <v-hover v-slot="{ hover }">
+    <v-carousel
+        hide-delimiters
+        :cycle="!hover"
+        interval=5000
+        height="50vh"
+        class="nftCarousel"
     >
-      <v-sheet
-          :color="colors[i]"
-          height="50vh"
+      <v-carousel-item
+          v-for="(item, i) in slides"
+          :key="i"
+          class="displayer"
       >
-        <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
+        <v-sheet
+            :color="colors[i]"
+            height="50vh"
         >
-          <div class="nftInfo">
-            <div class="nftText">
-              <h1 class="fonten specialSauceText">
-                {{ item.name }}
-              </h1>
-              <p>{{ item.descr }}</p>
+          <v-row
+              class="fill-height"
+              align="center"
+              justify="center"
+          >
+            <div class="nftInfo">
+              <div class="nftText">
+                <h1 class="fonten specialSauceText">
+                  {{ item.name }}
+                </h1>
+                <p>{{ item.descr }}</p>
+              </div>
+              <v-img
+                  :src="item.url"
+                  width="10rem"
+                  height="10rem"
+                  eager
+              />
             </div>
-            <v-img
-                :src="item.url"
-                width="10rem"
-                height="10rem"
-                eager
-            />
-          </div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
+  </v-hover>
+
 </template>
 
 <script>
