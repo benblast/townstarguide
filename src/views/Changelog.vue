@@ -5,7 +5,7 @@
     </h1>
     <div class="stuff">
       <v-card v-for="(item, i) in changelog" :key="i" class="itemCard">
-        <v-card-title class="title">
+        <v-card-title class="titlePage">
           {{ item.name }}
         </v-card-title>
         <v-card-text style="display: flex; justify-content: center">
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style>
-.title {
+.titlePage {
   display: flex;
   justify-content: center;
   word-break: break-word;
