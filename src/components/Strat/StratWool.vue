@@ -2,21 +2,22 @@
   <!--FIRST card START-->
   <div style='display: flex; justify-content: space-between'>
     <v-card style="display: flex; flex-direction: row; margin: 0 auto; max-width: 40%;" class='mt-5' rounded>
-      <v-card-text style="padding: 2rem; display: flex; flex-direction: column; align-items: center">
-        <h1 class='mb-3' style="color: moccasin; opacity: 80%; font-weight: 800; font-size: 3.5rem">
-          Wool Rush Strategy
+      <v-card-text style="padding: 2rem; display: flex; flex-direction: column;">
+        <h1 class='mb-3 img' style="color: moccasin; opacity: 80%; font-weight: 800; font-size: 3.5rem">
+          Wool Rush
         </h1>
         <br>
         <p>
-          So you want to go for the tried and true classic strategy of rushing Wool? Alright, lets do it.
+          This is a typical forest map, with a mountain next to it.
         </p>
         <v-img
             src="../../assets/strats/start/starting_1.png"
             width="40rem"
-            class="mb-3"
+            class="img"
         ></v-img>
+        <em class="img mb-3">Forest start</em>
         <p>
-          First off.
+          The starting buildings are always the same:
         </p>
         <ul>
           <li>
@@ -67,9 +68,9 @@
         <v-img
             src="../../assets/strats/start/starting_2.png"
             width="40rem"
-            class="mt-3"
+            class="mt-3 img"
         ></v-img>
-        Rushing with Windmills
+        <em class="img">Rushing with Wind Mills</em>
         <p class="mt-3">
           Remember that wind mills are affected by buildings that are nearby, which is an important part of the game called “Wind Block“. Read through the article, it is crucial information for the placement and planning of the buildings in your town. So place your wind mill with that in mind.
         </p>
@@ -92,22 +93,26 @@
         <v-img
             src="../../assets/strats/start/starting_3.png"
             width="40rem"
-            class="mt-3"
+            class="mt-3 img"
         ></v-img>
-        Example of a crop operation.
+        <em class="img">Example of a crop operation.</em>
         <v-img
             src="../../assets/strats/start/starting_4.png"
             width="40rem"
-            class="mt-3"
+            class="mt-3 img"
         ></v-img>
-        Example of a crop operation.
+        <em class="img">Example of a crop operation.</em>
         <p class="mt-3">
           You don’t have to finish the crop/tree farm operation entirely at this, you can build the beginning of it and finish it as you expand your production facilities.
         </p>
         <p>
           Now it’s time to get Gasoline Production up and running.
         </p>
+        <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 3rem;" to="/strats">
+          Back to Strategies
+        </v-btn>
       </v-card-text>
+
     </v-card>
   </div>
   <!--FIRST card END-->
@@ -115,7 +120,7 @@
 
 <script>
 export default {
-  name: 'Wool Rush Strat',
+  name: 'Wool Rush',
   data: () => ({
     hello: true
   })
@@ -123,5 +128,7 @@ export default {
 </script>
 
 <style>
-
+.img {
+  margin: 0 auto;
+}
 </style>

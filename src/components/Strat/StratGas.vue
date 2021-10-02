@@ -54,9 +54,12 @@
         <p>
           Remember that most of these buildings will cause Pollution around them, affecting crops and animal farms severely. Place the buildings somewhere out of the way to avoid this.
         </p>
-        <v-btn style="background: #636853; float: right; color: #ffffff!important;" to="/strats">
+      <div style="display: flex; justify-content: center;">
+        <v-btn style="background: #636853; color: #ffffff!important;" to="/strats">
           Go to Strategies
         </v-btn>
+      </div>
+
       </v-card-text>
     </v-card>
   </div>

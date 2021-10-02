@@ -133,14 +133,14 @@ div {
 }
 
 .top {
-  display: flex;
-  justify-content: center;
+
+  margin: 0 auto;
 }
 
 .mid {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   min-height: 15rem;
 }
 
@@ -150,8 +150,6 @@ div {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
   margin-top: -3rem;
 }
 
@@ -176,6 +174,7 @@ div {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   height: 30rem;
 }
 </style>
