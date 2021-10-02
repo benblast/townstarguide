@@ -73,7 +73,14 @@
                         {{ i }}
                       </div>
                     </template>
-                    <span>Important shizz here</span>
+                    <div style="display: flex; justify-content: center; flex-direction: column; margin: 0;">
+                      <div>City Points</div><div style="color: gold;">{{ item.CityPoints }}</div>
+                      <div>City Price</div><div style="color: gold;">{{ item.CityPrice }}</div>
+                      <div>Reqs</div>
+                      <div style="color: gold;">{{ item.Value1 }} {{ item.Req1 }}</div>
+                      <div style="color: gold;">{{ item.Value2 }} {{ item.Req2 }}</div>
+                      <div style="color: gold;">{{ item.Value3 }} {{ item.Req3 }}</div>
+                    </div>
                   </v-tooltip>
                 </template>
               </div>
@@ -114,6 +121,7 @@ export default {
 </script>
 
 <style scoped>
+
 div {
   font-family: "Grotesk", Helvetica, sans-serif;
   font-size: 1.2rem;
