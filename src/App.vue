@@ -5,6 +5,7 @@
         height="100%"
         class="appBar"
         dark
+        padding="0"
     >
       <div class="logoWrapper">
         <div class="logo">
@@ -15,9 +16,12 @@
           />
         </div>
 
-        <h2 class="logoText">
-          TownBlaster
-        </h2>
+        <div class="logoTextWrap">
+          <h2 class="logoText">
+            TownBlaster
+          </h2>
+        </div>
+
       </div>
 
       <v-tabs
@@ -82,6 +86,15 @@ export default {
 </script>
 
 <style>
+.v-toolbar__content {
+  padding: 0!important;
+}
+.logoTextWrap {
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+}
 .menu-tabs {
   width: 15rem;
   padding-top: 0.75rem!important;
@@ -123,24 +136,22 @@ ul {
   margin-bottom: 1rem;
 }
 .logoWrapper {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25rem;
 }
 
 .logoText {
-  font-size: 3rem;
+
+  margin: 0;
+  font-size: 2.5rem;
   color: #636853;
   filter: brightness(150%);
-  margin-left: -5rem;
-  margin-top: 1rem;
 }
 
 .logo {
   display: flex;
-  margin-top: 3rem;
-  width: 20rem;
 }
 .title {
   font-size: 1.2rem;
@@ -148,7 +159,9 @@ ul {
   font-family: 'Grotesk Bold', Helvetica, sans-serif;
 }
 .logoimg {
-
+  margin-top: 3rem;
+  margin-left: 1rem;
+  width: 7rem;
 }
 
 .spacer {

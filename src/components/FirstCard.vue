@@ -21,7 +21,7 @@
             Need to know the stats of a product or a building? Head on over to our <router-link to="/kbase">Knowledge Base</router-link>!
           </li>
           <li>
-            You are also able to check your item inventory in <router-link to="/wallet">Wallet</router-link>
+            The latest <router-link to="/changelog">Changelogs</router-link> are available for you to check on the current meta!
           </li>
           </ul>
         <v-btn style="background: #636853; float: right">
