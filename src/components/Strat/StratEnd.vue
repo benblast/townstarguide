@@ -12,7 +12,7 @@
               </div>
             </div>
             <div class='mid'>
-              <h2 style='color: grey; font-size: 2rem; margin-top: 0.3rem' class='amatic'>
+              <h2 style='font-size: 2rem; margin-top: 1rem' class='amatic'>
                 {{ card.head }}
               </h2>
               <v-divider class='mx-5 my-3'></v-divider>
@@ -28,7 +28,7 @@
 
       </div>
     </v-card>
-    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 3rem;" to="/strats">
+    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 1rem;" to="/strats">
       Back to Strategies
     </v-btn>
   </div>
@@ -84,6 +84,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 15rem;
+  margin-bottom: 3rem;
 }
 
 .top {
@@ -109,14 +110,4 @@ export default {
   margin-top: -3rem;
 }
 
-.mediumItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.v-divider--inset.v-divider--vertical {
-  margin: 25px 0;
-}
 </style>

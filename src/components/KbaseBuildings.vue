@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; color: #ffffff99">
+    <h1 style="display: flex; justify-content: center; color: #ffd70099">
       Buildings
     </h1>
     <div style="display: flex; justify-content: center">
@@ -41,7 +41,7 @@
       </v-dialog>
     </div>
 
-    <v-card class='bigCard'>
+    <v-card class='bigCard1'>
 
       <div class='theRow'>
 
@@ -53,7 +53,7 @@
               </div>
             </div>
             <div class='mid'>
-              <h2 style='color: grey; font-size: 2rem; margin: 0; margin-top: 1rem' class='amatic'>
+              <h2 style='font-size: 2rem; margin: 0; margin-top: 1rem' class='amatic'>
                 {{ card.head }}
               </h2>
               <v-divider class='mx-5 mb-3'></v-divider>
@@ -72,7 +72,7 @@
 
       </div>
     </v-card>
-    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 3rem;" to="/kbase">
+    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 1rem; margin-bottom: 3rem;" to="/kbase">
       Back to Knowledge Base
     </v-btn>
   </div>
@@ -127,10 +127,10 @@ div {
   font-family: "Grotesk", Helvetica, sans-serif;
   font-size: 1.2rem;
 }
-.bigCard {
+.bigCard1 {
   display: flex;
   flex-direction: column;
-  margin: 5rem 2rem 0 2rem;
+  margin: 3rem 2rem 0 2rem;
   padding: 1rem;
   border-radius: 25px;
 }
@@ -157,6 +157,7 @@ div {
   flex-direction: column;
   justify-content: space-between;
   min-height: 15rem;
+  margin-bottom: 1rem;
 }
 
 .circle {
@@ -186,5 +187,8 @@ div {
 }
 .buildingButton:hover {
   color: gold;
+}
+
+.building-types {
 }
 </style>

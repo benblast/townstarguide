@@ -12,7 +12,7 @@
             </div>
           </div>
           <div class='mid'>
-            <h2 style='color: grey; font-size: 2rem; margin-top: 0.3rem' class='amatic'>
+            <h2 style='font-size: 2rem; margin-top: 1rem' class='amatic'>
               {{ card.head }}
             </h2>
             <v-divider class='mx-5 my-3'></v-divider>
@@ -49,7 +49,7 @@ export default {
       {
         pic: require('../../assets/ingame/products/icon_sugar.png'),
         head: 'Sugar Rush',
-        text: "Alternative old-school strategy that utilizes Wind Mills to spam Sugar/Flour!",
+        text: "Old-school strategy that utilizes Wind Mills to spam Sugar/Flour!",
         link: '/strats/sugarrush'
       }
     ]
@@ -78,6 +78,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 15rem;
+  margin-bottom: 3rem;
 }
 
 .top {
@@ -103,14 +104,4 @@ export default {
   margin-top: -3rem;
 }
 
-.mediumItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.v-divider--inset.v-divider--vertical {
-  margin: 25px 0;
-}
 </style>

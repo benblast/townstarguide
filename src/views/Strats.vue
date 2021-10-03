@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; color: #ffffff99; font-size: 3rem;">
+    <h1 style="display: flex; justify-content: center; color: #ffd70099; font-size: 3rem;">
       STRATEGIES
     </h1>
     <v-card class='bigCard'>
@@ -15,7 +15,7 @@
               </div>
             </div>
             <div class='mid'>
-              <h2 style='color: grey; font-size: 2rem; margin-top: 0.3rem' class='amatic'>
+              <h2 style='font-size: 2rem; margin-top: 1rem' class='amatic'>
                 {{ card.head }}
               </h2>
               <v-divider class='mx-5 my-3'></v-divider>
@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .bigCard {
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ export default {
   width: 55%;
   padding: 1rem;
   padding-bottom: 5rem;
-  border-radius: 25px;
+  border-radius: 25px!important;
 }
 
 .theRow {

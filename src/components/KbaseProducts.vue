@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; color: #ffffff99; font-size: 3rem;">
+    <h1 style="display: flex; justify-content: center; color: #ffd70099; font-size: 3rem;">
       Products
     </h1>
     <div style="display: flex; justify-content: center">
@@ -57,10 +57,10 @@
       </v-dialog>
     </div>
 
-    <v-card class='bigCard'>
+    <v-card class='bigCard2'>
       <div class='theRow'>
         <template v-for='(card, i) in cards'>
-          <div :key='i' class='theCard mx-5'>
+          <div :key='i' class='theCard2 mx-5'>
             <div class='top'>
               <div class='circle'>
                 <v-img :src='card.pic'></v-img>
@@ -94,7 +94,7 @@
 
       </div>
     </v-card>
-    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 3rem;" to="/kbase">
+    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 1rem; margin-bottom: 3rem;" to="/kbase">
       Back to Knowledge Base
     </v-btn>
   </div>
@@ -126,7 +126,6 @@ export default {
 
 <style scoped>
 .key {
-
   text-align: right;
   margin-right: 0.5rem;
 }
@@ -138,12 +137,12 @@ div {
   font-family: "Grotesk", Helvetica, sans-serif;
   font-size: 1.2rem;
 }
-.bigCard {
+.bigCard2 {
   display: flex;
   flex-direction: column;
-  margin: 5rem 2rem 0 2rem;
-  padding: 1rem;
+  margin: 2rem 2rem 0 2rem;
   border-radius: 25px;
+
 }
 
 .theRow {
@@ -151,7 +150,7 @@ div {
   justify-content: space-between;
 }
 
-.theCard {
+.theCard2 {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -167,7 +166,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-height: 15rem;
+
 }
 
 .circle {
@@ -177,17 +176,6 @@ div {
   height: 7rem;
   border-radius: 50%;
   margin-top: -3rem;
-}
-
-.mediumItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.v-divider--inset.v-divider--vertical {
-  margin: 25px 0;
 }
 
 .buildingButton {
@@ -202,7 +190,9 @@ div {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  height: 30rem;
   width: 100%;
+  height: 30rem;
+  margin-bottom: 3rem;
+
 }
 </style>
