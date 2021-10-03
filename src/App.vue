@@ -48,7 +48,12 @@
         </v-tab>
       </v-tabs>
 
-      <div class="spacer" />
+      <div class="spacer">
+        <v-btn href="https://discord.gg/C7VAZrYAd3" style="height: 3rem; margin-bottom: 0.5rem; background: #636853; color: #ffffff!important;">
+          Join Our Discord!
+          <v-img src="./assets/ingame/buildings/icon_nuclearEngineer.png" width="80" style="margin-left: 1rem;"></v-img>
+        </v-btn>
+      </div>
 
     </v-app-bar>
 
@@ -116,6 +121,7 @@ body, html, p, li, ul, a {
 
 h1, h2, h3 {
   font-family: "Grotesk", Helvetica, sans-serif;
+  color: moccasin;
   margin-bottom: 15px;
   margin-top: 10px;
 }
@@ -146,7 +152,7 @@ ul {
 
   margin: 0;
   font-size: 2.5rem;
-  color: #636853;
+  color: #ffd70099;
   filter: brightness(150%);
 }
 
@@ -165,7 +171,12 @@ ul {
 }
 
 .spacer {
-  width: 40rem;
+  height: 100%;
+  width: 33rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 2rem;
 }
 
 @media (max-width: 1200px) {
