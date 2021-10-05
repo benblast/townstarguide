@@ -16,6 +16,7 @@ import KbaseBuildings from "../components/KbaseBuildings"
 import KbaseProducts from "../components/KbaseProducts"
 import Visualizer from '../views/Visualizer'
 import Changelog from "../views/Changelog"
+import Purchase from "../views/Purchase"
 
 Vue.use(VueRouter)
 
@@ -99,6 +100,11 @@ const routes = [
     path: '/changelog',
     name: 'Changelog',
     component: Changelog
+  },
+  {
+    path: '/purchase',
+    name: 'Purchase',
+    component: Purchase
   }
 ]
 

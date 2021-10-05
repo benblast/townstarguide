@@ -24,7 +24,7 @@
             The latest <router-link to="/changelog">Changelogs</router-link> are available for you to check on the current meta!
           </li>
           </ul>
-        <v-btn style="background: #636853; float: right">
+        <v-btn @click="postApi" style="background: #636853; float: right">
           Go to Strategies
         </v-btn>
       </v-card-text>
@@ -51,7 +51,12 @@ export default {
   name: 'FirstCard',
   data: () => ({
     hello: true
-  })
+  }),
+  methods: {
+    async postApi() {
+
+    }
+  }
 }
 </script>
 

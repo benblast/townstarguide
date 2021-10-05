@@ -49,22 +49,16 @@ export default {
         link: '/strats/beginner'
       },
       {
-        pic: require('../assets/ingame/products/icon_wool.png'),
+        pic: require('../assets/soon.png'),
         head: 'Start-Up',
         text: " Learn about strategies to build up your Town quickly.",
-        link: '/strats/startup'
+        link: ''
       },
       {
-        pic: require('../assets/ingame/products/icon_blueSteel.png'),
+        pic: require('../assets/soon.png'),
         head: 'End Game',
         text: "Check some examples of End Game strategies.",
-        link: '/strats/endgame'
-      },
-      {
-        pic: require('../assets/ingame/products/icon_crudeOil.png'),
-        head: 'Gas Strats',
-        text: `Learn how to make Gasoline and how to fit it into your Town.`,
-        link: '/strats/gas'
+        link: ''
       }
     ]
   })

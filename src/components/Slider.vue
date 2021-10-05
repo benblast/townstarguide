@@ -69,13 +69,13 @@ export default {
         name: 'Gas Troubles?',
         url: require("../assets/ingame/products/icon_crudeOil.png"),
         descr: "This oil is not for cookin'!",
-        link: '/strats/gas'
+        link: ''
       },
       {
         name: 'Quick Starts',
         url: require("../assets/ingame/buildings/icon_windPump.png"),
         descr: "Blast past everyone else with these trips and tricks.",
-        link: '/strats/startup'
+        link: ''
       },
       {
         name: 'Knowledge',
