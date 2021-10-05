@@ -10,17 +10,12 @@
       <div class="logoWrapper">
         <div class="logo">
           <v-img
-              :src="require('./assets/warning-tape.png')"
+              :src="require('./assets/tblogo_text.png')"
               contain
               class="logoimg"
           />
         </div>
 
-        <div class="logoTextWrap">
-          <h2 class="logoText">
-            TownBlaster
-          </h2>
-        </div>
 
       </div>
 
@@ -167,16 +162,16 @@ ul {
 .logoimg {
   margin-top: 3rem;
   margin-left: 1rem;
-  width: 7rem;
+  width: 28rem;
 }
 
 .spacer {
   height: 100%;
-  width: 33rem;
+  width: 50rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 @media (max-width: 1200px) {
