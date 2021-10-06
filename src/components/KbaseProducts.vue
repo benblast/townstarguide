@@ -18,7 +18,7 @@
             </v-img>
 
             <div style="display: flex; width: 100%; justify-content: center">
-              <div style="display: flex; flex-direction: column; justify-content: center; width: 9rem;">
+              <div style="display: flex; flex-direction: column; justify-content: center; width: 50%;">
                 <div class="key">City Points</div>
                 <div class="key">City Price</div>
                 <div class="key">Req1</div>
@@ -29,7 +29,7 @@
                 <div class="key">Time3</div>
                 <div class="key">Time4</div>
               </div>
-              <div style="display: flex; flex-direction: column; justify-content: center; width: 9rem;">
+              <div style="display: flex; flex-direction: column; justify-content: center; width: 50%;">
                 <div class="gold">{{ activeItem.CityPoints }}</div>
                 <div class="gold">{{ activeItem.CityPrice }}</div>
                 <div class="gold">{{ activeItem.Value1 }} {{ activeItem.Req1 }}</div>
@@ -132,6 +132,8 @@ export default {
 .gold {
   color: gold;
   margin-left: 0.5rem;
+  word-wrap: normal;
+
 }
 div {
   font-family: "Grotesk", Helvetica, sans-serif;
