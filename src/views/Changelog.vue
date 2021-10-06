@@ -1,24 +1,36 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; font-size: 3rem; color: #ffffff99; margin-top: 1rem">
+    <h1 style="display: flex; justify-content: center; font-size: 3rem; color: moccasin; margin-top: 1rem">
       Changelog
     </h1>
     <div class="stuff">
       <v-card v-for="(item, i) in changelog" :key="i" class="itemCard">
         <v-card-title class="titlePage">
-          {{ item.name }}
+          {{ i }}
         </v-card-title>
-        <v-card-text style="display: flex; justify-content: center">
-          <div style="">
-            <div>Price</div>
-            <div>Points</div>
-            <div>Time</div>
+        <v-card-text style="display: flex; justify-content: center; flex-direction: column">
+          <div>
+            <v-img
+                :src="'https://townstar.sandbox-games.com/launch/' + item.FileUrl"
+                class="logImg"
+                contain
+            >
+            </v-img>
           </div>
-          <div style="color: gold;">
-            <div>{{ item.price }}</div>
-            <div>{{ item.points }}</div>
-            <div>{{ item.time }}</div>
+
+          <div style="display: flex; justify-content: space-evenly">
+            <div>
+              <div>Price</div>
+              <div>Points</div>
+              <div>Time</div>
+            </div>
+            <div style="color: gold;">
+              <div>{{ item.CityPrice }}</div>
+              <div>{{ item.CityPoints }}</div>
+              <div>{{ item.Time0 }}</div>
+            </div>
           </div>
+
 
         </v-card-text>
         <div>
@@ -31,7 +43,7 @@
 </template>
 
 <script>
-import { changelog } from '../assets/reqs/changelog'
+import { changelog } from '../assets/reqs/changelog.js'
 
 export default {
   name: 'Changelog',
@@ -42,7 +54,11 @@ export default {
     changelog: changelog
   }),
   methods: {
-
+    getUrl(url) {
+      console.log(url)
+      url = "https://townstar.sandbox-games.com/launch/files" + url
+      return url
+    }
   }
 }
 </script>
@@ -51,8 +67,8 @@ export default {
 .titlePage {
   display: flex;
   justify-content: center;
-  word-break: break-word;
-  color: #ffffff;
+  word-break: keep-all;
+  color: moccasin;
 }
 .stuff {
   display: flex;
@@ -60,11 +76,15 @@ export default {
   justify-content: center;
   margin-top: 3rem;
   flex-wrap: wrap;
-  word-break: break-word;
 }
 .itemCard {
-  width: 10rem;
-  height: 12rem;
+  width: 12rem;
   margin: 1rem;
+
+}
+
+.logImg {
+  margin: 0 auto;
+  width: 7rem;
 }
 </style>

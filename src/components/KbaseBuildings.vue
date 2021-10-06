@@ -60,7 +60,9 @@
               <div class="building-types">
                 <template v-for="(item, i) in building">
                   <div @click="dialog = true; activeItem = item" :key="i" v-if="item.Class === card.head" class="buildingButton">
-                    {{ i }}
+                    <p style="word-break: keep-all; margin: 0.2rem; font-size: 1rem;">
+                      {{ i }}
+                      </p>
                   </div>
                 </template>
               </div>
@@ -183,6 +185,7 @@ div {
 }
 
 .buildingButton {
+
   cursor: pointer;
 }
 .buildingButton:hover {
