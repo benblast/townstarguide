@@ -59,11 +59,21 @@
               <v-divider class='mx-5 mb-3'></v-divider>
               <div class="building-types">
                 <template v-for="(item, i) in building">
-                  <div @click="dialog = true; activeItem = item" :key="i" v-if="item.Class === card.head" class="buildingButton">
-                    <p style="word-break: keep-all; margin: 0.2rem; font-size: 1rem;">
-                      {{ i }}
+                  <template v-if="item.Class === card.head && item.InStore">
+                    <div @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
+                      <p style="word-break: keep-all; margin: 0.2rem; font-size: 1rem;">
+                        {{ i }}
                       </p>
-                  </div>
+                    </div>
+                  </template>
+                  <template v-else-if="item.Class === card.head && item.Class === 'BlockChain' && item.BlockChainID.slice(-1) === '0'">
+                    <div @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
+                      <p style="word-break: keep-all; margin: 0.2rem; font-size: 1rem;">
+                        {{ i }}
+                      </p>
+                    </div>
+                  </template>
+
                 </template>
               </div>
               <v-divider class='mx-5 my-3'></v-divider>
