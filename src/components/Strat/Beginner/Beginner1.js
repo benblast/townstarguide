@@ -169,7 +169,7 @@ const steps = [
     },
     {
         title: 'Step 13',
-        intro: 'Build 4 Dirt Roads, 1 Well, and 1 Water Facility. Then sell 10 Flour when ready.',
+        intro: 'Build 4 Dirt Roads, 1 Well, and 1 Water Facility. Sell 10 Flour when ready.',
         img: require('../../../assets/strats/start/start_13.jpg'),
         text: '<p>' +
             'At this point you will need to sell 10 Extra energy to free up space in your Warehouse for the Water Drums.<br>' +

@@ -21,12 +21,17 @@
         <h2>{{ temp.intro }}</h2>
       </v-card-subtitle>
       <v-card-text>
-        <v-img :src="temp.img" :width="temp.imgSize ? temp.imgSize : '100%'" max-height="25rem" style="margin: 0 auto;" contain></v-img>
+        <v-dialog
+            v-model="dialog"
+        >
+          <v-img :src="temp.img" @click="switchDialog(false)" :height="temp.imgSize ? temp.imgSize : '100%'" max-height="90vh" style="margin: 0 auto;" contain></v-img>
+        </v-dialog>
+        <v-img :src="temp.img" :width="temp.imgSize ? temp.imgSize : '100%'" max-height="25rem" @click="switchDialog(true)" style="margin: 0 auto;" contain></v-img>
       </v-card-text>
       <v-card-text v-html="temp.text" style="padding: 3rem;">
         {{ temp.text }}
       </v-card-text>
-      <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; margin: 1rem auto; display: flex;" @click="nextStep">
+      <v-btn class="ghoulButton" @click="nextStep">
         {{ buttonStep }}
       </v-btn>
     </v-card>
@@ -39,10 +44,11 @@
 import { recipes } from '../../assets/reqs/recipes'
 import { buildings } from '../../assets/reqs/buildings'
 import { steps } from './Beginner/Beginner1'
+
 export default {
   name: 'StartupStrats',
   data: () => ({
-    test: false,
+    dialog: false,
     active: "color: gold;",
     next: 0,
     buttonStep: 'START GUIDE',
@@ -68,7 +74,7 @@ export default {
       title: 'Beginner Guide',
       intro: 'You joined Gala, you setup your account, and you are ready to play TownStar!',
       img: require('../../assets/ingame/buildings/icon_farmBot.png'),
-      imgSize: '10rem',
+      imgSize: '20rem',
       text: "        <p style=\"font-weight: bold\">\n" +
           "          - So how do you get started?<br>\n" +
           "          - How do you not run out of wages or gas?<br>\n" +
@@ -117,15 +123,15 @@ export default {
         this.next = 0
         this.temp = steps[this.next]
       }
+    },
+    switchDialog(bool) {
+      this.dialog = bool
     }
   }
 }
 </script>
 
 <style>
-.img {
-  margin: 0 auto;
-}
 
 .step-hover {
   font-family: 'Grotesk', Helvetica, sans-serif;
@@ -137,5 +143,13 @@ export default {
 .step-hover:hover {
   color: gold;
   cursor: pointer;
+}
+
+.ghoulButton {
+  background: #636853!important;
+  color: #ffffff!important;
+  width: 15rem!important;
+  margin: 1rem auto!important;
+  display: flex!important;
 }
 </style>
