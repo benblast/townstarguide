@@ -1,5 +1,5 @@
 <template>
-  <!--FIRST card START-->
+  <!--Guide-->
   <div style='display: grid; grid-template-columns: 15% 85%; width: 75%; margin: 1rem auto; font-family: "Grotesk", Helvetica, sans-serif;'>
     <v-card style="margin: 1rem auto; min-width: 10rem;">
       <v-card-text style="width: 100%; margin: 0 auto">
