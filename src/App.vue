@@ -15,8 +15,6 @@
               class="logoimg"
           />
         </div>
-
-
       </div>
 
       <v-tabs
@@ -180,7 +178,7 @@ ul {
   }
 
   .logoWrapper {
-    width: 1rem;
+    display: none;
   }
 
   .logo {
@@ -191,13 +189,13 @@ ul {
   }
   .tab {
 
-    width: 100%;
+    width: auto;
   }
   .title {
     font-size: 1rem;
   }
   .spacer {
-    width: 1rem;
+    display: none;
   }
 }
 </style>

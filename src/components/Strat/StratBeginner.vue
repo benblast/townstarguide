@@ -28,12 +28,14 @@
         </v-dialog>
         <v-img :src="temp.img" :width="temp.imgSize ? temp.imgSize : '100%'" max-height="25rem" @click="switchDialog(true)" style="margin: 0 auto;" contain></v-img>
       </v-card-text>
-      <v-card-text v-html="temp.text" style="padding: 3rem;">
+      <v-card-text v-html="temp.text" style="padding: 1rem;">
         {{ temp.text }}
       </v-card-text>
-      <v-btn class="ghoulButton" @click="nextStep">
-        {{ buttonStep }}
-      </v-btn>
+      <v-card-text>
+        <v-btn class="ghoulButton" @click="nextStep">
+          {{ buttonStep }}
+        </v-btn>
+      </v-card-text>
     </v-card>
   </div>
 
@@ -108,7 +110,7 @@ export default {
       if(this.temp === steps[steps.length - 1]) {
         this.buttonStep = 'BACK TO START'
       }
-      },
+    },
     nextStep() {
       if(this.temp !== this.card) {
         this.buttonStep = 'NEXT STEP'
@@ -117,11 +119,11 @@ export default {
       }
       if(this.temp === this.card) {
         this.buttonStep = 'START GUIDE'
+        this.next = 0
       }
       if(this.temp === steps[steps.length - 1]) {
         this.buttonStep = 'BACK TO START'
         this.next = 0
-        this.temp = steps[this.next]
       }
     },
     switchDialog(bool) {
