@@ -28,7 +28,7 @@
         </v-dialog>
         <v-img :src="temp.img" :width="temp.imgSize ? temp.imgSize : '100%'" max-height="25rem" @click="switchDialog(true)" style="margin: 0 auto;" contain></v-img>
       </v-card-text>
-      <v-card-text v-html="temp.text" class="guideContent" style="padding: 1rem;">
+      <v-card-text v-html="temp.text" class="guideContent">
         {{ temp.text }}
       </v-card-text>
       <v-card-text>
@@ -140,7 +140,11 @@ div {
 }
 .guideContent {
   color: moccasin;
-  margin-bottom: 2rem!important;
+  margin-bottom: 0;
+}
+
+ul, li {
+  margin-bottom: 1rem!important;
 }
 
 .step-hover {

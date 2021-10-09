@@ -9,7 +9,7 @@ const steps = [
         text: "<p>" +
             "The starting buildings are always the same:" +
             "</p>" +
-            "<ul>" +
+            "<ul style='margin-bottom: 1rem;'>" +
             "<li>" +
             "Trade Depot" +
             "</li>" +
@@ -32,7 +32,7 @@ const steps = [
             "<p>" +
             "The starting items in your inventory are also always the same:" +
             "</p>" +
-            "<ul>" +
+            "<ul style='margin-bottom: 1rem;'>" +
             "<li>" +
             "40 Gasoline" +
             "</li>" +
