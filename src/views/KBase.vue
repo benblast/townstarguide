@@ -109,18 +109,6 @@ div {
   margin-top: -3rem;
 }
 
-
-@media (max-width: 1200px) {
-  .bigCard {
-    width: 100%;
-  }
-}
-@media (max-width: 1200px) {
-  .bigCard {
-    width: 100%;
-  }
-}
-
 @media (max-width: 800px) {
   .theRow {
     flex-direction: column;
