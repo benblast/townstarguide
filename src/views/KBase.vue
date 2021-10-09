@@ -67,7 +67,7 @@ div {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 3rem;
-  width: 35%;
+  width: 45rem;
   padding: 1rem;
   padding-bottom: 5rem;
   border-radius: 25px;
@@ -95,9 +95,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 19rem;
-  max-height: 19rem;
-
+  height: 100%;
 }
 
 .circle {
@@ -117,21 +115,23 @@ div {
     width: 100%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .bigCard {
-    align-items: center;
+    width: 100%;
   }
+}
+
+@media (max-width: 800px) {
   .theRow {
     flex-direction: column;
-    width: 100%;
+  }
+  .bigCard {
     align-items: center;
   }
   .theCard {
     margin-bottom: 7rem;
     max-width: 100%;
   }
-  .mid {
-    width: 100%;
-  }
 }
+
 </style>

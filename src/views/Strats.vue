@@ -66,12 +66,16 @@ export default {
 </script>
 
 <style scoped>
+div {
+  font-family: "Grotesk", Helvetica, sans-serif;
+  font-size: 1.3rem;
+}
 .bigCard {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   margin-top: 3rem;
-  width: 55%;
+  width: 45rem;
   padding: 1rem;
   padding-bottom: 5rem;
   border-radius: 25px!important;
@@ -113,14 +117,17 @@ export default {
   margin-top: -3rem;
 }
 
-.mediumItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+@media (max-width: 800px) {
+  .theRow {
+    flex-direction: column;
+  }
+  .bigCard {
+    align-items: center;
+  }
+  .theCard {
+    margin-bottom: 7rem;
+    max-width: 100%;
+  }
 }
-.v-divider--inset.v-divider--vertical {
-  margin: 25px 0;
-}
+
 </style>
