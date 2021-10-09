@@ -144,14 +144,6 @@ ul {
   align-items: center;
 }
 
-.logoText {
-
-  margin: 0;
-  font-size: 2.5rem;
-  color: #ffd70099;
-  filter: brightness(150%);
-}
-
 .logo {
   display: flex;
 }
@@ -177,9 +169,6 @@ ul {
 
 
 @media (max-width: 1200px) {
-  .logoText {
-    display: none;
-  }
 
   .logoWrapper {
     display: none;
