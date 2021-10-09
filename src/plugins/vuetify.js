@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib/framework'
-import colors from 'vuetify/lib/util/colors'
 
 Vue.use(Vuetify);
 
@@ -9,8 +8,8 @@ export default new Vuetify({
         dark: true,
         themes: {
             dark: {
-                primary: colors.purple,
-                secondary: colors.indigo,
+                primary: '#636853',
+                secondary: '#FFE4B5',
                 accent: '#8c9eff',
                 error: '#b71c1c',
             },

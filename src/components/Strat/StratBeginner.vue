@@ -133,13 +133,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .step-hover {
   font-family: 'Grotesk', Helvetica, sans-serif;
   font-size: 1rem;
   text-align: center;
   width: 100%;
+}
+
+.active {
+  color: gold;
 }
 
 .step-hover:hover {

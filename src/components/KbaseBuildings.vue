@@ -41,7 +41,7 @@
       </v-dialog>
     </div>
 
-    <v-card class='bigCard1'>
+    <v-card class='bigCard'>
 
       <div class='theRow'>
 
@@ -139,7 +139,7 @@ div {
   font-family: "Grotesk", Helvetica, sans-serif;
   font-size: 1.2rem;
 }
-.bigCard1 {
+.bigCard {
   display: flex;
   flex-direction: column;
   margin: 3rem 2rem 0 2rem;

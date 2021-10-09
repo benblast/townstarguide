@@ -18,8 +18,10 @@
       </div>
 
       <v-tabs
+          v-model="mobile"
           centered
           color="grey darken-1"
+          class="theMenu"
       >
         <v-tab
             v-for="(item, i) in tabs"
@@ -33,10 +35,11 @@
                 size="50"
                 color="#FFFFFF99"
                 style="margin-bottom: 0.3rem"
+                class="tab-icon"
             >
               {{ item.icon }}
             </v-icon>
-            <div class="title">{{ item.title }}</div>
+            <div class="menu-title">{{ item.title }}</div>
           </div>
         </v-tab>
       </v-tabs>
@@ -62,6 +65,7 @@ export default {
   name: 'TownBlaster',
 
   data: () => ({
+    mobile: false,
     tabs: [
       {
         icon: 'mdi-skull-crossbones-outline',
@@ -83,13 +87,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .v-toolbar__content {
   padding: 0!important;
 }
 .logoTextWrap {
   height: 100%;
-
   display: flex;
   align-items: flex-end;
 }
@@ -152,10 +155,10 @@ ul {
 .logo {
   display: flex;
 }
-.title {
+.menu-title {
   font-size: 1.2rem;
   color: #FFFFFF88;
-  font-family: 'Grotesk Bold', Helvetica, sans-serif;
+  font-family: 'Grotesk Bold', Helvetica, sans-serif!important;
 }
 .logoimg {
   margin-top: 3rem;
@@ -171,6 +174,7 @@ ul {
   align-items: flex-end;
   margin-right: 3rem;
 }
+
 
 @media (max-width: 1200px) {
   .logoText {
@@ -191,11 +195,32 @@ ul {
 
     width: auto;
   }
-  .title {
+  .menu-title {
     font-size: 1rem;
   }
   .spacer {
     display: none;
   }
+}
+
+@media (max-width: 600px) {
+
+  .menu-tabs {
+    width: 1rem;
+    margin: 0;
+  }
+
+  .menu-title {
+    font-size: 12px!important;
+  }
+
+  .appBar {
+    width: 100vw;
+  }
+
+  .tab-icon {
+    font-size: 2rem!important;
+  }
+
 }
 </style>

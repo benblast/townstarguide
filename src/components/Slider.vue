@@ -1,19 +1,20 @@
 <template>
-  <v-hover v-slot="{ hover }">
+  <v-hover v-slot="{ hover }" style="padding-bottom: 3rem;">
     <v-carousel
         hide-delimiters
         :cycle="!hover"
         interval=5000
-        height="50vh"
+        height="40vh"
         class="nftCarousel"
     >
       <v-carousel-item
           v-for="(item, i) in slides"
           :key="i"
+          max-height="100%"
       >
         <v-sheet
             :color="colors[i]"
-            height="50vh"
+            height="40vh"
         >
           <v-row
               class="fill-height"
@@ -66,7 +67,7 @@ export default {
         link: '/changelog'
       },
       {
-        name: 'Gas Troubles?',
+        name: 'Got Gas?',
         url: require("../assets/ingame/products/icon_crudeOil.png"),
         descr: "This oil is not for cookin'!",
         link: ''
@@ -89,11 +90,19 @@ export default {
 </script>
 
 <style scoped>
-
+div {
+  font-family: "Grotesk", Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
 .fonten {
   font-family: "Grotesk", monospace, sans-serif;
   font-size: 4rem;
   line-height: 4rem;
+  color: #FFE4B5;
+  text-decoration: underline #636853;
+  margin-bottom: 1rem;
 }
 .nftCarousel {
   width: 100%;
@@ -108,6 +117,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: #ffffff99;
+  font-size: 1.1rem;
 }
 
 .nftImg {
@@ -115,5 +125,24 @@ export default {
 
 .nftText {
   max-width: 25vh;
+}
+a:hover {
+  filter: brightness(80%);
+}
+
+@media (max-width: 600px) {
+
+  .nftCarousel {
+    width: 100% !important;
+  }
+
+  .nftInfo {
+
+  }
+  .nftImg {
+    margin-top: 3rem;
+    min-width: 5rem!important;
+    max-width: 5rem!important;
+  }
 }
 </style>

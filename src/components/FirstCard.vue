@@ -1,9 +1,9 @@
 <template>
   <!--FIRST card START-->
-  <div style='display: flex; justify-content: space-between'>
-    <v-card style="display: flex; flex-direction: row; margin: 0 auto;" max-height='30rem' class='mt-5' rounded>
-      <v-card-text style="padding: 2rem;">
-        <h1 class='mb-3' style="color: moccasin; opacity: 80%; font-weight: 800; font-size: 3.5rem">
+  <div class="firstCardWrapper">
+    <v-card class="firstCard" rounded>
+      <v-card-text class="cardContent">
+        <h1 class='firstCardTitle mb-3' style="">
           Level up your gameplay
         </h1>
         <br>
@@ -24,7 +24,7 @@
             The latest <router-link to="/changelog">Changelogs</router-link> are available for you to check on the current meta!
           </li>
           </ul>
-        <v-btn @click="postApi" style="background: #636853; float: right">
+        <v-btn to="/strats" style="background: #636853; float: right">
           Go to Strategies
         </v-btn>
       </v-card-text>
@@ -34,7 +34,7 @@
           vertical
           style="margin: 1rem 0 1rem 0"
       ></v-divider>
-      <v-card-text style="display: flex; justify-content: center; width: 40vh; padding: 0;">
+      <v-card-text class="firstCardSide">
         <v-img
             contain
             src="../assets/ingame/buildings/icon_windmill.png"
@@ -60,6 +60,66 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+p, ul, li {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-family: "Grotesk", Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #636853;
+  filter: brightness(150%);
+}
+a:hover {
+  filter: brightness(250%);
+  text-decoration: underline;
+}
+.firstCardWrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
+.firstCard {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+}
+
+.cardContent {
+  padding: 2rem;
+}
+
+.firstCardTitle {
+  color: moccasin;
+  opacity: 80%;
+  font-weight: 800;
+  line-height: 2rem;
+  font-size: 3.5rem;
+}
+
+.firstCardSide {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 22rem;
+}
+
+@media (max-width: 600px) {
+  .firstCard {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+  }
+  .firstCardTitle {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .firstCardSide {
+    display: none;
+  }
+  .cardContent {
+    padding: 1rem;
+  }
+}
 </style>
