@@ -18,11 +18,13 @@
             </v-img>
 
             <template v-for="(item, i) in activeItem">
-              <div style="width: 100%;" :key="i" v-if="i === 'Class' || i === 'BuildCost' || i === 'DestroyCost' || i === 'Crafts' || i === 'EdgeRequirements' || i === 'LaborCost' || i === 'ProximityEmit' || i === 'ProximityDist'">
-                <ul style="list-style: none; display: flex; flex-direction: row; width: 100%;">
-                  <li style="width: 50%; text-align: right; margin: 0 1rem;">{{ i }}</li>
-                  <li style="color: gold; width: 50%; text-align: left; margin: 0 1rem; word-break: break-all">{{ item }}</li>
-                </ul>
+              <div style="display: flex; width: 100%; justify-content: center" :key="i" v-if="i === 'Class' || i === 'BuildCost' || i === 'DestroyCost' || i === 'Crafts' || i === 'EdgeRequirements' || i === 'LaborCost' || i === 'ProximityEmit' || i === 'ProximityDist'">
+                <div style="display: flex; flex-direction: column; justify-content: center; width: 50%; text-align: right; margin-right: 0.5rem;" class="buildingOpenCard">
+                  {{ i }}
+                </div>
+                <div style="color: gold; display: flex; flex-direction: column; justify-content: center; width: 50%; text-align: left; margin-left: 0.5rem;">
+                  {{ item }}
+                </div>
               </div>
 
             </template>
@@ -246,6 +248,9 @@ div {
   .theCard {
     margin: 0 0 7rem 0!important;
     max-width: 100%;
+  }
+  .gold {
+    word-break: keep-all;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="display: flex; flex-direction: column; align-items: center">
     <h1 style="display: flex; justify-content: center; color: #ffd70099; font-size: 3rem;">
       Products
     </h1>
@@ -141,15 +141,16 @@ div {
 }
 .bigCard2 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   margin: 2rem 2rem 0 2rem;
   border-radius: 25px;
-
+  width: 55rem;
+  flex-wrap: wrap;
 }
 
 .theRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .theCard2 {
@@ -182,18 +183,21 @@ div {
 
 .buildingButton {
   cursor: pointer;
-  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  margin: 1rem;
 }
 .buildingButton:hover {
   color: gold;
 }
 .building-types {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   width: 100%;
-
 }
 
 @media (max-width: 1200px) {
