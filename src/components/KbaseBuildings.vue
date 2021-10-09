@@ -204,4 +204,36 @@ div {
 
 .building-types {
 }
+
+@media (max-width: 1200px) {
+  .theRow {
+    flex-direction: column;
+  }
+  .bigCard {
+    align-items: center;
+    width: 100vw;
+    margin: 5rem 0 0 0;
+    padding: 0;
+  }
+
+  .theRow {
+    width: 100%;
+  }
+  .building-types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .buildingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 6rem;
+  }
+  .theCard {
+    margin-bottom: 7rem;
+    max-width: 100%;
+  }
+}
 </style>
