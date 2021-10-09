@@ -61,6 +61,12 @@ export default {
 </script>
 
 <style scoped>
+h1, h2, h3 {
+  font-family: "Grotesk", Helvetica, sans-serif;
+  color: moccasin;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
 p, ul, li {
   font-size: 1.3rem;
   line-height: 2rem;
