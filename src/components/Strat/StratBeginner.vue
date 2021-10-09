@@ -1,7 +1,7 @@
 <template>
   <!--Guide-->
-  <div style='display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; grid-template-areas: "b a a ." "b a a ." "b a a ."; width: 75%; margin: 1rem auto; font-family: "Grotesk", Helvetica, sans-serif;'>
-    <v-card style="height: 35rem; margin: 1rem auto; min-width: 10rem; grid-area: b;">
+  <div style='display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; grid-template-areas: "b a a ." "b a a ." "b a a ."; width: 85vw; margin: 1rem auto; font-family: "Grotesk", Helvetica, sans-serif;'>
+    <v-card style="height: fit-content; margin: 1rem auto; min-width: 10rem; grid-area: b;">
       <v-card-text style="width: 100%; margin: 0 auto">
         <div class="step-hover" @click="switchStep(card)">
           {{ card.title }}
@@ -24,11 +24,11 @@
         <v-dialog
             v-model="dialog"
         >
-          <v-img :src="temp.img" @click="switchDialog(false)" :height="temp.imgSize ? temp.imgSize : '100%'" max-height="90vh" style="margin: 0 auto;" contain></v-img>
+          <v-img :src="temp.img" @click="switchDialog(false)" :width="temp.imgSize ? temp.imgSize : '100%'" max-height="80vh" style="margin: 0 auto;" contain></v-img>
         </v-dialog>
         <v-img :src="temp.img" :width="temp.imgSize ? temp.imgSize : '100%'" max-height="25rem" @click="switchDialog(true)" style="margin: 0 auto;" contain></v-img>
       </v-card-text>
-      <v-card-text v-html="temp.text" style="padding: 1rem;">
+      <v-card-text v-html="temp.text" class="guideContent" style="padding: 1rem;">
         {{ temp.text }}
       </v-card-text>
       <v-card-text>
@@ -58,36 +58,36 @@ export default {
       title: 'Beginner Guide',
       intro: 'You joined Gala, you setup your account, and you are ready to play TownStar!',
       img: require('../../assets/ingame/buildings/icon_farmBot.png'),
-      imgSize: '10rem',
-      text: "        <p style=\"font-weight: bold\">\n" +
-          "          - So how do you get started?<br>\n" +
-          "          - How do you not run out of wages or gas?<br>\n" +
-          "          - How do you keep from nuking your town and keep starting over from scratch?\n" +
-          "        </p>\n" +
-          "        <h1>\n" +
-          "          This is how!\n" +
-          "        </h1>\n" +
-          "        <p>\n" +
-          "          Just follow this step by step tutorial and you'll be in the money and earning stars in no time!\n" +
-          "          Each step has a corresponding screen shot to help you along the way.\n" +
+      imgSize: '100%',
+      text: "        <p style=\"font-weight: bold;\">" +
+          "          - So how do you get started?<br>" +
+          "          - How do you not run out of wages or gas?<br>" +
+          "          - How do you keep from nuking your town and starting over from scratch?" +
+          "        </p>" +
+          "        <h1 style='color: moccasin; margin-bottom: 1rem;'>" +
+          "          This is how!" +
+          "        </h1>" +
+          "        <p>" +
+          "          Just follow this step by step tutorial and you'll be in the money and earning stars in no time!" +
+          "          Each step has a corresponding screenshot to help you along the way." +
           "        </p>"
     },
     temp: {
       title: 'Beginner Guide',
       intro: 'You joined Gala, you setup your account, and you are ready to play TownStar!',
       img: require('../../assets/ingame/buildings/icon_farmBot.png'),
-      imgSize: '20rem',
-      text: "        <p style=\"font-weight: bold\">\n" +
-          "          - So how do you get started?<br>\n" +
-          "          - How do you not run out of wages or gas?<br>\n" +
-          "          - How do you keep from nuking your town and keep starting over from scratch?\n" +
-          "        </p>\n" +
-          "        <h1>\n" +
-          "          This is how!\n" +
-          "        </h1>\n" +
-          "        <p>\n" +
-          "          Just follow this step by step tutorial and you'll be in the money and earning stars in no time!\n" +
-          "          Each step has a corresponding screen shot to help you along the way.\n" +
+      imgSize: '100%',
+      text: "        <p style=\"font-weight: bold\">" +
+          "          - So how do you get started?<br>" +
+          "          - How do you not run out of wages or gas?<br>" +
+          "          - How do you keep from nuking your town and starting over from scratch?" +
+          "        </p>" +
+          "        <h1 style='color: moccasin; margin-bottom: 1rem;'>" +
+          "          This is how!" +
+          "        </h1>" +
+          "        <p>" +
+          "          Just follow this step by step tutorial and you'll be in the money and earning stars in no time!" +
+          "          Each step has a corresponding screenshot to help you along the way." +
           "        </p>"
     },
     steps: steps,
@@ -134,6 +134,14 @@ export default {
 </script>
 
 <style scoped>
+div {
+  font-family: "Grotesk", Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.guideContent {
+  color: moccasin;
+  margin-bottom: 2rem!important;
+}
 
 .step-hover {
   font-family: 'Grotesk', Helvetica, sans-serif;
@@ -145,7 +153,9 @@ export default {
 .active {
   color: gold;
 }
-
+.v-card__subtitle {
+  color: moccasin;
+}
 .step-hover:hover {
   color: gold;
   cursor: pointer;

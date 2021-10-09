@@ -117,7 +117,7 @@ body, html, p, li, ul, a {
 
 h1, h2, h3 {
   font-family: "Grotesk", Helvetica, sans-serif;
-  color: moccasin;
+  color: moccasin!important;
   margin-bottom: 15px;
   margin-top: 10px;
 }
