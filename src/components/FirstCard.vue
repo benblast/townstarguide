@@ -99,7 +99,7 @@ a:hover {
 .firstCardTitle {
   color: moccasin;
   font-weight: 800;
-  line-height: 2rem;
+  line-height: 3rem;
   font-size: 3.5rem;
 }
 
