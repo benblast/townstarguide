@@ -61,14 +61,14 @@
                 <template v-for="(item, i) in building">
                   <template v-if="item.Class === card.head && item.InStore">
                     <div @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
-                      <p style="word-break: keep-all; margin: 0.2rem; font-size: 1rem;">
+                      <p style="font-size: 1rem;">
                         {{ i }}
                       </p>
                     </div>
                   </template>
                   <template v-else-if="item.Class === card.head && item.Class === 'BlockChain' && item.BlockChainID.slice(-1) === '0'">
                     <div @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
-                      <p style="word-break: keep-all; margin: 0.2rem; font-size: 1rem;">
+                      <p style="word-break: keep-all; font-size: 1rem;">
                         {{ i }}
                       </p>
                     </div>
@@ -145,6 +145,7 @@ div {
   margin: 3rem 2rem 0 2rem;
   padding: 1rem;
   border-radius: 25px;
+  word-break: keep-all;
 }
 
 .theRow {
@@ -196,6 +197,7 @@ div {
 
 .buildingButton {
 
+
   cursor: pointer;
 }
 .buildingButton:hover {
@@ -203,36 +205,46 @@ div {
 }
 
 .building-types {
+  width: 100%;
+
 }
 
 @media (max-width: 1200px) {
+
+
   .theRow {
     flex-direction: column;
+    align-items: center;
   }
   .bigCard {
     align-items: center;
-    width: 100vw;
     margin: 5rem 0 0 0;
     padding: 0;
+
   }
 
-  .theRow {
-    width: 100%;
-  }
   .building-types {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .buildingButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
-    height: 6rem;
+    width: auto;
+    height: 3rem;
+    margin: 1rem;
+    word-break: break-word!important;
+  }
+  .buildingButton p {
+    margin: 0;
+    font-size: 1.3rem!important;
+
   }
   .theCard {
-    margin-bottom: 7rem;
+    margin: 0 0 7rem 0!important;
     max-width: 100%;
   }
 }

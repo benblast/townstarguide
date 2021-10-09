@@ -60,7 +60,7 @@
     <v-card class='bigCard2'>
       <div class='theRow'>
         <template v-for='(card, i) in cards'>
-          <div :key='i' class='theCard2 mx-5'>
+          <div :key='i' class='theCard2'>
             <div class='top'>
               <div class='circle'>
                 <v-img :src='card.pic'></v-img>
@@ -193,8 +193,37 @@ div {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  height: 30rem;
-  margin-bottom: 3rem;
 
+}
+
+@media (max-width: 1200px) {
+
+  .theCard2 {
+    margin: 0 0 7rem 0!important;
+    max-width: 100%!important;
+  }
+  .theRow {
+    width: 100%;
+    margin: 0!important;
+  }
+  .bigCard2 {
+    margin: 5rem 0 0 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .building-types {
+    flex-direction: row;
+  }
+
+  .buildingButton {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-word;
+    height: 3rem;
+  }
 }
 </style>

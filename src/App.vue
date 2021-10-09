@@ -194,6 +194,7 @@ ul {
 
 @media (max-width: 600px) {
 
+
   .menu-tabs {
     width: 1rem;
     margin: 0;
@@ -204,7 +205,7 @@ ul {
   }
 
   .appBar {
-    width: 100vw;
+    width: auto;
   }
 
   .tab-icon {
