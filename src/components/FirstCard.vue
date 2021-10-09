@@ -3,7 +3,7 @@
   <div class="firstCardWrapper">
     <v-card class="firstCard" rounded>
       <v-card-text class="cardContent">
-        <h1 class='firstCardTitle mb-3' style="">
+        <h1 class='firstCardTitle mb-3'>
           Level up your gameplay
         </h1>
         <br>
@@ -63,7 +63,7 @@ export default {
 <style scoped>
 h1, h2, h3 {
   font-family: "Grotesk", Helvetica, sans-serif;
-  color: moccasin;
+  color: moccasin!important;
   margin-bottom: 15px;
   margin-top: 10px;
 }
@@ -98,7 +98,6 @@ a:hover {
 
 .firstCardTitle {
   color: moccasin;
-  opacity: 80%;
   font-weight: 800;
   line-height: 2rem;
   font-size: 3.5rem;
