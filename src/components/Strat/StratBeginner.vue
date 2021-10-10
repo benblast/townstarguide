@@ -53,7 +53,7 @@ export default {
         pic: require('../../assets/ingame/buildings/icon_refinery.png'),
         head: 'Improving Fast',
         text: "Focusing on production efficiency and expansion.",
-        link: ''
+        link: '/strats/improving'
       },
       {
         pic: require('../../assets/ingame/products/icon_sugar.png'),

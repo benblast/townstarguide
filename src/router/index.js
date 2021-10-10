@@ -18,6 +18,7 @@ import Visualizer from '../views/Visualizer'
 import Changelog from "../views/Changelog"
 import Purchase from "../views/Purchase"
 import StratNewPlayer from "../components/Strat/StratNewPlayer"
+import StratImproving from "../components/Strat/StratImproving"
 
 Vue.use(VueRouter)
 
@@ -111,6 +112,11 @@ const routes = [
     path: '/strats/newplayer',
     name: 'NewPlayer',
     component: StratNewPlayer
+  },
+  {
+    path: '/strats/improving',
+    name: 'Improving',
+    component: StratImproving
   }
 ]
 
