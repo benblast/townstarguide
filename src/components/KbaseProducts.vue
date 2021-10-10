@@ -74,6 +74,7 @@
                   <v-tooltip right nudge-left="150" :key="i">
                     <template v-slot:activator="{ on, attrs }">
                       <div v-bind="attrs" v-on="on" @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
+                        <v-img :src="'https://townstar.sandbox-games.com/launch/'+item.FileUrl"></v-img>
                         {{ i }}
                       </div>
                     </template>
@@ -142,7 +143,7 @@ div {
 .bigCard2 {
   display: flex;
   justify-content: center;
-  margin: 2rem 2rem 0 2rem;
+  margin: 5rem 2rem 0 2rem;
   border-radius: 25px;
   width: 55rem;
   flex-wrap: wrap;
@@ -184,10 +185,11 @@ div {
 .buildingButton {
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 3rem;
+
   margin: 1rem;
 }
 .buildingButton:hover {
@@ -227,7 +229,6 @@ div {
     justify-content: center;
     align-items: center;
     word-break: break-word;
-    height: 3rem;
   }
 }
 </style>
