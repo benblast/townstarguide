@@ -66,6 +66,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 div {
   font-family: "Grotesk", Helvetica, sans-serif;
   font-size: 1.3rem;
@@ -75,15 +77,15 @@ div {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 3rem;
-  width: 45rem;
+  width: 75vw;
   padding: 1rem;
   padding-bottom: 5rem;
-  border-radius: 25px!important;
+  border-radius: 25px;
 }
 
 .theRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: -2rem;
 }
 
@@ -91,7 +93,7 @@ div {
   text-align: center;
   display: flex;
   flex-direction: column;
-  max-width: 15rem;
+  width: 25%;
 }
 
 .top {
@@ -103,7 +105,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 15rem;
+  height: 100%;
 }
 
 .circle {
@@ -120,13 +122,16 @@ div {
 @media (max-width: 800px) {
   .theRow {
     flex-direction: column;
+    align-items: center;
   }
   .bigCard {
+    margin: 7rem 0 3rem 0;
+    width: 100%;
     align-items: center;
   }
   .theCard {
     margin-bottom: 7rem;
-    max-width: 100%;
+    width: 100%;
   }
 }
 

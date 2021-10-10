@@ -88,14 +88,11 @@ export default {
 </script>
 
 <style scoped>
-.v-toolbar__content {
-  padding: 0!important;
+
+body {
+  width: calc(100vw - (100vw - 100%));
 }
-.logoTextWrap {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
+
 .menu-tabs {
   width: 15rem;
   padding-top: 0.75rem!important;
