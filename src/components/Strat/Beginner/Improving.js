@@ -103,6 +103,28 @@ const steps = [
             '<p>' +
             `Be sure to check out the next tutorial “Improved Gas Production”!` +
             '</p>',
+    },
+    {
+        title: 'Bonus - Step 1',
+        intro: 'Welcome to “Bonus – Sugar Bump!”',
+        img: require('../../../assets/strats/improving/improving_9.jpg'),
+        text: '<p>' +
+            `After crafting 10 Flour, turn off all your Windmills and sell the 10 Flour to empty your Store House. Then delete your Wheat Fields and flush your Silo` +
+            '</p>',
+    },
+    {
+        title: 'Bonus - Step 2',
+        intro: 'Build 2 Ponds and 4 Sugarcane Fields.',
+        img: require('../../../assets/strats/improving/improving_10.jpg'),
+        text: '<p>' +
+            `Next add 2 new Ponds and 4 Sugarcane Fields and turn crafting on your Windmills to Sugar.` +
+            '</p>' +
+            '<p>' +
+            `Tada! You are now getting a Sugar Bump!` +
+            '</p>' +
+            '<p>' +
+            `Sugar requires more water than Wheat, but with the Power of the Ponds you can do it and it sells for more $ and more stars!` +
+            '</p>',
     }
 ]
 
