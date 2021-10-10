@@ -56,13 +56,7 @@ export default {
         link: '/strats/improving'
       },
       {
-        pic: require('../../assets/ingame/products/icon_sugar.png'),
-        head: 'Sugar Bump!',
-        text: "Check some examples of End Game strategies.",
-        link: ''
-      },
-      {
-        pic: require('../../assets/ingame/buildings/icon_pond.png'),
+        pic: require('../../assets/soon.png'),
         head: 'Power of the Ponds',
         text: "Water is awesome. Ponds are made of water. They are also awesome.",
         link: ''
