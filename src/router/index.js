@@ -17,7 +17,7 @@ import KbaseProducts from "../components/KbaseProducts"
 import Visualizer from '../views/Visualizer'
 import Changelog from "../views/Changelog"
 import Purchase from "../views/Purchase"
-
+import StratNewPlayer from "../components/Strat/StratNewPlayer"
 
 Vue.use(VueRouter)
 
@@ -106,6 +106,11 @@ const routes = [
     path: '/purchase',
     name: 'Purchase',
     component: Purchase
+  },
+  {
+    path: '/strats/newplayer',
+    name: 'NewPlayer',
+    component: StratNewPlayer
   }
 ]
 

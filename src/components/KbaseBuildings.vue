@@ -55,7 +55,7 @@
               </div>
             </div>
             <div class='mid'>
-              <h2 style='font-size: 2rem; margin: 0; margin-top: 1rem' class='amatic'>
+              <h2 style='color: moccasin; font-size: 2rem; margin: 0; margin-top: 1rem' class='amatic'>
                 {{ card.head }}
               </h2>
               <v-divider class='mx-5 mb-3'></v-divider>

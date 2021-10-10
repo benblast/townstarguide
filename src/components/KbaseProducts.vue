@@ -145,7 +145,7 @@ div {
   justify-content: center;
   margin: 5rem 2rem 0 2rem;
   border-radius: 25px;
-  width: 55rem;
+  width: 75vw;
   flex-wrap: wrap;
 }
 
