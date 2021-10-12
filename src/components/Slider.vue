@@ -1,29 +1,26 @@
 <template>
-  <v-hover v-slot="{ hover }" style="padding-bottom: 3rem;">
+  <v-hover v-slot="{ hover }" style="margin: 1rem 1rem 0 0;">
     <v-carousel
-        hide-delimiters
+        hide-delimiter-background
+        :show-arrows="false"
         :cycle="!hover"
         interval=5000
-        height="40vh"
+        height="25rem"
         class="nftCarousel"
     >
       <v-carousel-item
           v-for="(item, i) in slides"
           :key="i"
-          max-height="100%"
       >
         <v-sheet
             :color="colors[i]"
-            height="40vh"
+            class="fill-height"
+            style="padding: 2rem; display: flex; justify-content: center;"
         >
-          <v-row
-              class="fill-height"
-              align="center"
-              justify="center"
-          >
+
             <router-link :to="item.link">
               <div class="nftInfo">
-                <div class="nftText" style="margin-right: 1.5rem">
+                <div class="nftText">
                   <h1 class="fonten specialSauceText">
                     {{ item.name }}
                   </h1>
@@ -31,15 +28,12 @@
                 </div>
                 <v-img
                     :src="item.url"
-                    min-width="15rem"
-                    max-width="15rem"
                     eager
                     class="nftImg"
                 />
               </div>
             </router-link>
 
-          </v-row>
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
@@ -102,14 +96,8 @@ a {
   line-height: 4rem;
   color: #FFE4B5;
   text-decoration: underline #636853;
-  margin-bottom: 1rem;
 }
 .nftCarousel {
-  width: 100%;
-}
-
-.displayer {
-  width: 100%;
 }
 
 .nftInfo {
@@ -117,32 +105,36 @@ a {
   justify-content: center;
   align-items: center;
   color: #ffffff99;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .nftImg {
+
 }
 
 .nftText {
-  max-width: 25vh;
 }
 a:hover {
   filter: brightness(80%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
 
   .nftCarousel {
     width: 100% !important;
+  }
+
+  .fonten {
+    font-size: 2rem;
   }
 
   .nftInfo {
 
   }
   .nftImg {
-    margin-top: 3rem;
-    min-width: 5rem!important;
-    max-width: 5rem!important;
+    display: none;
   }
 }
 </style>

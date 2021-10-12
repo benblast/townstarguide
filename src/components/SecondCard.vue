@@ -2,31 +2,22 @@
   <!--FIRST card START-->
   <div class="firstCardWrapper">
     <v-card class="firstCard" rounded>
-      <v-card-text class="cardContent" style="text-align: center;">
-        <h1 class='firstCardTitle mb-3'>
-          Level up your gameplay
-        </h1>
-        <br>
-        <p>
-          Struggling to reach the top of the leaderboards? Look no further, TownBlaster will help your gameplay reach new heights.
+      <v-card-text class="cardContent">
+        <v-divider class='my-3'></v-divider>
+        <h3>
+          Gala Price
+        </h3>
+        <p style="color: #FFd70099; margin: 0!important;">
+          ${{ prices.gala }}
         </p>
-        <p>
-          TownBlaster has everything. The strats, the tricks, the stats.
+        <v-divider class='my-3'></v-divider>
+        <h3>
+          Ether Price
+        </h3>
+        <p style="color: #FFd70099">
+          ${{ prices.eth }}
         </p>
-        <ul style="list-style: none;">
-        <li>
-          Check out <router-link to="/strats">Strategies</router-link> to get info on good starts, end game builds and other goodies.
-        </li>
-          <li>
-            Need to know the stats of a product or a building? Head on over to our <router-link to="/kbase">Knowledge Base</router-link>!
-          </li>
-          <li>
-            The latest <router-link to="/changelog">Changelogs</router-link> are available for you to check on the current meta!
-          </li>
-          </ul>
-        <v-btn to="/strats" style="background: #636853; float: right">
-          Go to Strategies
-        </v-btn>
+        <v-divider class='my-3'></v-divider>
       </v-card-text>
     </v-card>
   </div>
@@ -34,15 +25,23 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'FirstCard',
+  name: 'SecondCard',
   data: () => ({
-    hello: true
-  }),
-  methods: {
-    async postApi() {
-
+    prices: {
+      eth: 0,
+      gala: 0,
+      town: 0
     }
+  }),
+  async mounted() {
+    const result = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=gala&vs_currencies=usd')
+    console.log(result.data)
+    this.prices.gala = result.data.gala.usd
+    const result2 = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd')
+    console.log(result2.data)
+    this.prices.eth = result2.data.ethereum.usd
   }
 }
 </script>
@@ -55,7 +54,7 @@ h1, h2, h3 {
   margin-top: 10px;
 }
 p, ul, li {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   font-family: "Grotesk", Helvetica, sans-serif;
 }
@@ -70,19 +69,20 @@ a:hover {
 }
 .firstCardWrapper {
   display: flex;
-  margin-top: 1rem;
-
+  justify-content: space-between;
+  margin: 1rem 1rem 0 1rem;
+  height: 25rem;
 }
 
 .firstCard {
   display: flex;
   flex-direction: column;
   width: 100%;
-
 }
 
 .cardContent {
   padding: 2rem;
+
 }
 
 .firstCardTitle {
@@ -90,15 +90,12 @@ a:hover {
   font-weight: 800;
   line-height: 3rem;
   font-size: 3.5rem;
-  display: flex;
-  justify-content: center;
 }
 
 .firstCardSide {
   display: flex;
   justify-content: center;
   padding: 0;
-  width: 12rem;
 }
 
 @media (max-width: 600px) {

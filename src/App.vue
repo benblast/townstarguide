@@ -89,9 +89,7 @@ export default {
 
 <style scoped>
 
-body {
-  width: calc(100vw - (100vw - 100%));
-}
+
 
 .menu-tabs {
   width: 15rem;
@@ -109,7 +107,7 @@ body {
 }
 body, html, p, li, ul, a {
   font-family: "Grotesk", Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h1, h2, h3 {
