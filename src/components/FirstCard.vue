@@ -70,14 +70,13 @@ a:hover {
 .firstCardWrapper {
   display: flex;
   margin-top: 1rem;
-
 }
 
 .firstCard {
   display: flex;
   flex-direction: column;
   width: 100%;
-
+  height: 25rem;
 }
 
 .cardContent {
@@ -117,6 +116,7 @@ a:hover {
     width: 90vw;
     display: flex;
     flex-direction: column;
+    height: auto;
   }
   .firstCardTitle {
     font-size: 2rem;
