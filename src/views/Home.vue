@@ -1,13 +1,11 @@
 <template>
-  <div style='display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; grid-template-areas: "a a b b c c" "e d d d d f"; width: 100%; margin: 0 auto; font-family: "Grotesk", Helvetica, sans-serif;'>
-    <SecondCard style="grid-area: a; margin-right: 1rem!important;"/>
-    <Slider style="grid-area: b"/>
-    <div style="grid-area: c; box-sizing: border-box">
-      <HomeKbase/>
-    </div>
-    <FirstBanner style="grid-area: e"/>
-    <FirstCard style="grid-area: d"/>
-    <SecondBanner style="grid-area: f"/>
+  <div class="landingWrapper">
+    <SecondCard class="secondCard" style="grid-area: a;"/>
+    <Slider class="sliderCard" style="grid-area: b"/>
+    <HomeKbase class="homeKbaseCard" style="grid-area: c;"/>
+    <FirstBanner class="firstBannerCard" style="grid-area: e"/>
+    <FirstCard class="firstCard" style="grid-area: d;"/>
+    <SecondBanner class="secondBannerCard" style="grid-area: f"/>
   </div>
 </template>
 
@@ -38,4 +36,30 @@ export default {
 
 <style scoped>
 
+.landingWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a a b b c c" "e d d d d f";
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Grotesk", Helvetica, sans-serif;
+}
+
+@media (max-width: 1400px) {
+
+  .landingWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "b b b" "a a a" "c c c" "e e e" "f f f" "d d d";
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Grotesk", Helvetica, sans-serif;
+  }
+
+  .secondCard {
+    margin-bottom: 1rem!important;
+  }
+}
 </style>

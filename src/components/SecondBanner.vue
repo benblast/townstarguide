@@ -8,7 +8,7 @@
         </h3>
         <v-divider class='my-3'></v-divider>
 
-        <v-img src="../assets/ingame/buildings/icon_refinery.png" />
+        <v-img class="bannerImg" src="../assets/ingame/buildings/icon_refinery.png" />
         <v-divider class='my-3'></v-divider>
         <p style="color: #FFd70099">
           Want to be seen here?
@@ -69,7 +69,6 @@ a:hover {
 
 .cardContent {
   padding: 2rem;
-
 }
 
 .firstCardTitle {
@@ -85,7 +84,18 @@ a:hover {
   padding: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1400px) {
+  .firstCardWrapper {
+    height: auto;
+  }
+  .bannerImg {
+    margin: 0 auto;
+    max-height: 20rem;
+    max-width: 20rem;
+  }
+}
+@media (max-width: 700px) {
+
   .firstCard {
     display: flex;
     flex-direction: column;

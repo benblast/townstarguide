@@ -18,8 +18,10 @@
       </div>
 
       <v-tabs
-          v-model="mobile"
-          centered
+          fixed-tabs
+          hide-slider
+          slider-size="0px"
+          mobile-breakpoint="700px"
           color="grey darken-1"
           class="theMenu"
       >
@@ -65,7 +67,6 @@ export default {
   name: 'TownBlaster',
 
   data: () => ({
-    mobile: false,
     tabs: [
       {
         icon: 'mdi-skull-crossbones-outline',
@@ -86,10 +87,12 @@ export default {
   }),
 };
 </script>
-
+<style>
+.v-slide-group__prev {
+  display: none !important;
+}
+</style>
 <style scoped>
-
-
 
 .menu-tabs {
   width: 15rem;
@@ -148,8 +151,7 @@ ul {
   font-family: 'Grotesk Bold', Helvetica, sans-serif!important;
 }
 .logoimg {
-  margin-top: 3rem;
-  margin-left: 1rem;
+  margin-top: 2.5rem;
   width: 28rem;
 }
 
@@ -163,12 +165,14 @@ ul {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
+  .appBar {
+    width: 100vw;
+  }
   .logoWrapper {
     display: none;
   }
-
   .logo {
     width: 10rem;
   }
@@ -176,7 +180,6 @@ ul {
     width: auto;
   }
   .tab {
-
     width: auto;
   }
   .menu-title {
@@ -187,24 +190,32 @@ ul {
   }
 }
 
-@media (max-width: 600px) {
-
+@media (max-width: 700px) {
 
   .menu-tabs {
-    width: 1rem;
-    margin: 0;
+    margin: 0 auto;
   }
 
+  .tab {
+    margin: 0;
+  }
+  .theMenu {
+    margin: 0;
+  }
   .menu-title {
     font-size: 12px!important;
   }
 
-  .appBar {
-    width: auto;
+
+  .v-slide-group__prev {
+    display: none !important;
   }
+
 
   .tab-icon {
     font-size: 2rem!important;
+  }
+  .tab {
   }
 
 }

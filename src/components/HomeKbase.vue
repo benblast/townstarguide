@@ -72,6 +72,7 @@ export default {
 </script>
 
 <style scoped>
+
 .goButton {
   background: #63685399!important;
 }
@@ -107,6 +108,7 @@ a:hover {
 .cardContent {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -124,15 +126,24 @@ a:hover {
   width: 30%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1400px) {
+
+  .firstCardSide {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .firstCardWrapper {
+    width: 90vw;
+  }
   .firstCard {
     display: flex;
     flex-direction: column;
-    max-height: fit-content;
   }
   .firstCardTitle {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .firstCardSide {
     display: none;

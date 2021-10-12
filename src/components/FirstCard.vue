@@ -3,10 +3,9 @@
   <div class="firstCardWrapper">
     <v-card class="firstCard" rounded>
       <v-card-text class="cardContent" style="text-align: center;">
-        <h1 class='firstCardTitle mb-3'>
-          Level up your gameplay
+        <h1 class='firstCardTitle'>
+          Hi
         </h1>
-        <br>
         <p>
           Struggling to reach the top of the leaderboards? Look no further, TownBlaster will help your gameplay reach new heights.
         </p>
@@ -24,7 +23,7 @@
             The latest <router-link to="/changelog">Changelogs</router-link> are available for you to check on the current meta!
           </li>
           </ul>
-        <v-btn to="/strats" style="background: #636853; float: right">
+        <v-btn to="/strats" style="background: #636853;">
           Go to Strategies
         </v-btn>
       </v-card-text>
@@ -101,11 +100,23 @@ a:hover {
   width: 12rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1400px) {
+  p, ul, li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+
+
+  .firstCardWrapper {
+    width: 90vw;
+    margin: 1rem;
+  }
   .firstCard {
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    max-height: fit-content;
   }
   .firstCardTitle {
     font-size: 2rem;
