@@ -69,7 +69,7 @@ export default {
       {
         name: 'Quick Starts',
         url: require("../assets/ingame/buildings/icon_windPump.png"),
-        descr: "Blast past everyone else with these trips and tricks.",
+        descr: "Blast past everyone else with these tips and tricks.",
         link: ''
       },
       {

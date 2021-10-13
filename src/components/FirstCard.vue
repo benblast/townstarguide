@@ -2,30 +2,40 @@
   <!--FIRST card START-->
   <div class="firstCardWrapper">
     <v-card class="firstCard" rounded>
-      <v-card-text class="cardContent" style="text-align: center;">
+      <v-card-text class="cardContent" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
         <h1 class='firstCardTitle'>
           Hi
         </h1>
-        <p>
-          Struggling to reach the top of the leaderboards? Look no further, TownBlaster will help your gameplay reach new heights.
+        <p style="font-style: italic">
+          Thanks for putting up with all the bugs and stuff while we build!
         </p>
         <p>
-          TownBlaster has everything. The strats, the tricks, the stats.
+          Soon we will have all the Strategies and Tools that you need to play Town Star at a high level. Tools are being built. Guides are being written. Noobs are being pwned.
         </p>
-        <ul style="list-style: none;">
-        <li>
-          Check out <router-link to="/strats">Strategies</router-link> to get info on good starts, end game builds and other goodies.
-        </li>
-          <li>
-            Need to know the stats of a product or a building? Head on over to our <router-link to="/kbase">Knowledge Base</router-link>!
-          </li>
-          <li>
-            The latest <router-link to="/changelog">Changelogs</router-link> are available for you to check on the current meta!
-          </li>
-          </ul>
-        <v-btn to="/strats" style="background: #636853;">
-          Go to Strategies
-        </v-btn>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding: 1rem; ">
+
+          <p style="width: 5rem; object-fit: contain;">
+            <v-img src="../assets/warning-tape.png"
+                   contain
+            />
+          </p>
+          <p style="width: 5rem; object-fit: contain;">
+            <v-img src="../assets/warning-tape.png"
+                   contain
+            />
+          </p>
+          <p style="width: 5rem; object-fit: contain;">
+            <v-img src="../assets/warning-tape.png"
+                   contain
+            />
+          </p>
+          <p style="width: 5rem; object-fit: contain;">
+            <v-img src="../assets/warning-tape.png"
+                   contain
+            />
+          </p>
+
+        </div>
       </v-card-text>
     </v-card>
   </div>
@@ -70,6 +80,7 @@ a:hover {
 .firstCardWrapper {
   display: flex;
   margin-top: 1rem;
+
 }
 
 .firstCard {
@@ -80,7 +91,7 @@ a:hover {
 }
 
 .cardContent {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .firstCardTitle {

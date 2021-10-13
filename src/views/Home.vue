@@ -42,7 +42,6 @@ export default {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a a b b c c" "e d d d d f";
   width: 100%;
-  margin: 0 auto;
   font-family: "Grotesk", Helvetica, sans-serif;
 }
 
@@ -54,12 +53,10 @@ export default {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "b b b" "a a a" "c c c" "e e e" "f f f" "d d d";
     width: 100%;
-    margin: 0 auto;
     font-family: "Grotesk", Helvetica, sans-serif;
   }
 
   .secondCard {
-    margin-bottom: 1rem!important;
   }
 }
 </style>
