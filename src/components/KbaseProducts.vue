@@ -1,103 +1,52 @@
 <template>
-  <div style="display: flex; flex-direction: column; align-items: center">
+  <div style="width: 90%; margin: 0 auto;">
     <h1 style="display: flex; justify-content: center; color: #ffd70099; font-size: 3rem;">
       Products
     </h1>
-    <div style="display: flex; justify-content: center">
-      <v-dialog
-          v-model="dialog"
-          width="500px"
-      >
-        <v-card>
-          <v-card-title style="display: flex; justify-content: center">
-            <span class="text-h5">{{ activeItem.Name }}</span>
-          </v-card-title>
-          <v-card-text style="display: flex; flex-direction: column; justify-content: center; align-items: center">
 
-            <v-img :src="getFullUrl(activeItem.FileUrl)" class="mb-3">
-            </v-img>
-
-            <div style="display: flex; width: 100%; justify-content: center">
-              <div style="display: flex; flex-direction: column; justify-content: center; width: 50%;">
-                <div class="key">City Points</div>
-                <div class="key">City Price</div>
-                <div class="key">Req1</div>
-                <div class="key">Req2</div>
-                <div class="key">Req3</div>
-                <div class="key">Time1</div>
-                <div class="key">Time2</div>
-                <div class="key">Time3</div>
-                <div class="key">Time4</div>
-              </div>
-              <div style="display: flex; flex-direction: column; justify-content: center; width: 50%;">
-                <div class="gold">{{ activeItem.CityPoints }}</div>
-                <div class="gold">{{ activeItem.CityPrice }}</div>
-                <div class="gold">{{ activeItem.Value1 }} {{ activeItem.Req1 }}</div>
-                <div class="gold">{{ activeItem.Value2 }} {{ activeItem.Req2 }}</div>
-                <div class="gold">{{ activeItem.Value3 }} {{ activeItem.Req3 }}</div>
-                <div class="gold">{{ activeItem.Time0 }}</div>
-                <div class="gold">{{ activeItem.Time1 }}</div>
-                <div class="gold">{{ activeItem.Time2 }}</div>
-                <div class="gold">{{ activeItem.Time3 }}</div>
-              </div>
-            </div>
-
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn
-                color="green darken-1"
-                text
-                @click="dialog = false"
-            >
-              OK
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
-    </div>
-
-    <v-card class='bigCard2'>
-      <div class='theRow'>
-        <template v-for='(card, i) in cards'>
-          <div :key='i' class='theCard2'>
-            <div class='top'>
-              <div class='circle'>
-                <v-img :src='card.pic'></v-img>
-              </div>
-            </div>
-            <div class='mid'>
-              <v-divider class='mx-5 mb-3 mt-5'></v-divider>
-              <div class="building-types">
-                <template v-for="(item, i) in recipes">
-
-                  <v-tooltip right nudge-left="150" :key="i">
-                    <template v-slot:activator="{ on, attrs }">
-                      <div v-bind="attrs" v-on="on" @click="dialog = true; activeItem = item" :key="i" class="buildingButton">
-                        <v-img :src="'https://townstar.sandbox-games.com/launch/'+item.FileUrl"></v-img>
-                        {{ i }}
-                      </div>
-                    </template>
-                    <div style="display: flex; justify-content: center; flex-direction: column; margin: 0;">
-                      <div>City Points</div><div style="color: gold;">{{ item.CityPoints }}</div>
-                      <div>City Price</div><div style="color: gold;">{{ item.CityPrice }}</div>
-                      <div>Reqs</div>
-                      <div style="color: gold;">{{ item.Value1 }} {{ item.Req1 }}</div>
-                      <div style="color: gold;">{{ item.Value2 }} {{ item.Req2 }}</div>
-                      <div style="color: gold;">{{ item.Value3 }} {{ item.Req3 }}</div>
-                    </div>
-                  </v-tooltip>
-                </template>
-              </div>
-            </div>
-          </div>
-        </template>
-
-      </div>
+    <v-card class="searchBar" style="">
+      <v-card-title style="padding-top: 0;">
+        <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Search product..."
+            single-line
+            hide-details
+        ></v-text-field>
+      </v-card-title>
     </v-card>
-    <v-btn style="background: #636853; color: #ffffff!important; width: 15rem; display: flex; margin: 0 auto; margin-top: 1rem; margin-bottom: 3rem;" to="/kbase">
-      Back to Knowledge Base
-    </v-btn>
+
+    <v-data-table
+      :headers="headz"
+      :search="search"
+      :items="compRecipes"
+      :items-per-page="10"
+      style="border-radius: 25px; padding: 1rem;"
+    >
+
+      <template v-slot:header="{ header }">
+        {{ header }}
+      </template>
+      <template v-slot:body="{ items }">
+        <tbody>
+        <tr
+            v-for="item in items"
+            :key="item.Name"
+        >
+          <td style="color: #ffd700; font-size: 1.5rem;">{{ item.Name }}</td>
+          <td>{{ item.CityPoints }}</td>
+          <td>{{ item.CityPrice }}</td>
+          <td>{{ item.Value1 }} {{ item.Req1 }}</td>
+          <td>{{ item.Value2 }} {{ item.Req2 }}</td>
+          <td>{{ item.Value3 }} {{ item.Req3 }}</td>
+          <td>{{ item.Time0 }}</td>
+          <td>{{ item.Time1 }}</td>
+          <td>{{ item.Time2 }}</td>
+        </tr>
+        </tbody>
+      </template>
+    </v-data-table>
+
   </div>
 </template>
 
@@ -107,9 +56,25 @@ export default {
   name: 'KbaseProducts',
   components: {  },
   data: () => ({
+    search: '',
     recipes: recipes,
+    compRecipes: [],
+    headz: [
+      { text: 'Product', value: 'Name' },
+      { text: 'City Points', value: 'CityPoints' },
+      { text: 'City Price', value: 'CityPrice' },
+      { text: 'Req1', value: 'Req1' },
+      { text: 'Req2', value: 'Req2' },
+      { text: 'Req3', value: 'Req3' },
+      { text: 'Time1', value: 'Time0' },
+      { text: 'Time2', value: 'Time1' },
+      { text: 'Time3', value: 'Time2' },
+
+
+    ],
     dialog: false,
     activeItem: {},
+    headers: Object.keys(recipes),
     cards: [
       {
         pic: require('../assets/ingame/products/icon_wheat.png'),
@@ -117,7 +82,23 @@ export default {
       }
     ]
   }),
+  created() {
+    let arrayObj = []
+    for(let item of Object.values(recipes)) {
+      arrayObj.push(item)
+    }
+    this.compRecipes = arrayObj
+  },
   methods: {
+    convert() {
+      let arrayObj = []
+      for(let item of Object.values(recipes)) {
+        arrayObj.push(item)
+      }
+      this.compRecipes = arrayObj
+
+      console.log(arrayObj)
+    },
     getFullUrl(path) {
       return `https://townstar.sandbox-games.com/launch/${path}`;
     }
@@ -126,6 +107,11 @@ export default {
 </script>
 
 <style scoped>
+.searchBar {
+  width: 33%;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
 .key {
   text-align: right;
   margin-right: 0.5rem;
@@ -202,7 +188,7 @@ div {
   width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
   .theCard2 {
     margin: 0 0 7rem 0!important;
@@ -218,7 +204,12 @@ div {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .searchBar {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+  }
   .building-types {
     flex-direction: row;
   }

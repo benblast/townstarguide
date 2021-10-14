@@ -21,7 +21,6 @@
           fixed-tabs
           hide-slider
           slider-size="0px"
-          mobile-breakpoint="700px"
           color="grey darken-1"
           class="theMenu"
       >
