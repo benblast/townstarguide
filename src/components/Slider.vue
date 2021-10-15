@@ -67,10 +67,10 @@ export default {
         link: ''
       },
       {
-        name: 'Quick Starts',
+        name: 'Newbie Guide',
         url: require("../assets/ingame/buildings/icon_windPump.png"),
-        descr: "Blast past everyone else with these tips and tricks.",
-        link: ''
+        descr: "Are you new to Town Star? Start here!",
+        link: '/strats/newplayer'
       },
       {
         name: 'Knowledge',

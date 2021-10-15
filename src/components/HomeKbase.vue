@@ -8,7 +8,7 @@
             Products
           </h1>
           <p>
-            Everything from Wheat Fields to Nuclear Power Plants!
+            See stats on everything from Sugarcane to Blue Steel!
           </p>
           <v-btn class="goButton" to="/kbase/products">GO TO PRODUCTS</v-btn>
         </v-card-text>
