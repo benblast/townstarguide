@@ -97,16 +97,19 @@ export default {
   width: 15rem;
   padding-top: 0.75rem!important;
 }
+
 @font-face {
   font-family: "Grotesk";
   src: local("Grotesk"),
   url(./assets/fonts/hk-grotesk.medium.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Grotesk Bold";
   src: local("Grotesk"),
   url(./assets/fonts/hk-grotesk.bold.ttf) format("truetype");
 }
+
 body, html, p, li, ul, a {
   font-family: "Grotesk", Helvetica, sans-serif;
   font-size: 1.2rem;
@@ -137,11 +140,13 @@ ul {
 .logo {
   display: flex;
 }
+
 .menu-title {
   font-size: 1.2rem;
   color: #FFFFFF88;
   font-family: 'Grotesk Bold', Helvetica, sans-serif!important;
 }
+
 .logoimg {
   margin-top: 2.5rem;
   width: 28rem;
@@ -156,9 +161,7 @@ ul {
   margin-right: 3rem;
 }
 
-
 @media (max-width: 1400px) {
-
   .appBar {
     width: 100vw;
   }
@@ -183,11 +186,9 @@ ul {
 }
 
 @media (max-width: 700px) {
-
   .menu-tabs {
     margin: 0 auto;
   }
-
   .tab {
     margin: 0;
   }
@@ -197,18 +198,13 @@ ul {
   .menu-title {
     font-size: 12px!important;
   }
-
-
   .v-slide-group__prev {
     display: none !important;
   }
-
-
   .tab-icon {
     font-size: 2rem!important;
   }
   .tab {
   }
-
 }
 </style>

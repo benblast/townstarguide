@@ -20,10 +20,9 @@
       :headers="headz"
       :search="search"
       :items="compRecipes"
-      :items-per-page="10"
+      :items-per-page="50"
       style="border-radius: 25px; padding: 1rem;"
     >
-
       <template v-slot:header="{ header }">
         {{ header }}
       </template>
@@ -36,9 +35,7 @@
           <td style="color: #ffd700; font-size: 1.5rem;">{{ item.Name }}</td>
           <td>{{ item.CityPoints }}</td>
           <td>{{ item.CityPrice }}</td>
-          <td>{{ item.Value1 }} {{ item.Req1 }}</td>
-          <td>{{ item.Value2 }} {{ item.Req2 }}</td>
-          <td>{{ item.Value3 }} {{ item.Req3 }}</td>
+          <td>{{ item.Value1 }} {{ item.Req1 }}<br>{{ item.Value2 }} {{ item.Req2 }}<br>{{ item.Value3 }} {{ item.Req3 }}</td>
           <td>{{ item.Time0 }}</td>
           <td>{{ item.Time1 }}</td>
           <td>{{ item.Time2 }}</td>
@@ -63,14 +60,10 @@ export default {
       { text: 'Product', value: 'Name' },
       { text: 'City Points', value: 'CityPoints' },
       { text: 'City Price', value: 'CityPrice' },
-      { text: 'Req1', value: 'Req1' },
-      { text: 'Req2', value: 'Req2' },
-      { text: 'Req3', value: 'Req3' },
+      { text: 'Reqs', value: 'Req1' },
       { text: 'Time1', value: 'Time0' },
       { text: 'Time2', value: 'Time1' },
       { text: 'Time3', value: 'Time2' },
-
-
     ],
     dialog: false,
     activeItem: {},
