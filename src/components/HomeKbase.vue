@@ -74,7 +74,7 @@ export default {
 <style scoped>
 
 .goButton {
-  background: #63685399!important;
+  background: #636853!important;
 }
 h1, h2, h3 {
   font-family: "Grotesk", Helvetica, sans-serif;
@@ -85,15 +85,7 @@ p, ul, li {
   line-height: 1.8rem;
   font-family: "Grotesk", Helvetica, sans-serif;
 }
-a {
-  text-decoration: none;
-  color: #636853;
-  filter: brightness(150%);
-}
-a:hover {
-  filter: brightness(250%);
-  text-decoration: underline;
-}
+
 .firstCardWrapper {
   display: flex;
   margin: 1rem 1rem 0 1rem;

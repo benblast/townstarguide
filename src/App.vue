@@ -119,15 +119,6 @@ h1, h2, h3 {
   margin-top: 10px;
 }
 
-a, a:active, a:visited {
-  text-decoration: none;
-  color: #636853!important;
-}
-
-a:hover {
-  filter: brightness(80%);
-}
-
 .appBar {
   height: 10vh;
 }
