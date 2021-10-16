@@ -32,6 +32,7 @@
             v-for="item in items"
             :key="item.Name"
         >
+          <td style="width: 5rem"><v-img :src="getFullUrl(item.FileUrl)" width="5rem"/></td>
           <td style="color: #ffd700; font-size: 1.5rem;">{{ item.Name }}</td>
           <td>{{ item.CityPoints }}</td>
           <td>{{ item.CityPrice }}</td>
@@ -57,6 +58,7 @@ export default {
     recipes: recipes,
     compRecipes: [],
     headz: [
+      { text: 'Icon', value: 'Icon' },
       { text: 'Product', value: 'Name' },
       { text: 'City Points', value: 'CityPoints' },
       { text: 'City Price', value: 'CityPrice' },
@@ -67,13 +69,7 @@ export default {
     ],
     dialog: false,
     activeItem: {},
-    headers: Object.keys(recipes),
-    cards: [
-      {
-        pic: require('../assets/ingame/products/icon_wheat.png'),
-        head: 'Farm',
-      }
-    ]
+    headers: Object.keys(recipes)
   }),
   created() {
     let arrayObj = []

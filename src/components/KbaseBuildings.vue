@@ -13,10 +13,8 @@
             <span class="text-h5">{{ activeItem.Name }}</span>
           </v-card-title>
           <v-card-text style="display: flex; flex-direction: column; justify-content: center; align-items: center">
-
             <v-img :src="getFullUrl(activeItem.FileUrl)" class="mb-3" width="9rem">
             </v-img>
-
             <template v-for="(item, i) in activeItem">
               <div style="display: flex; width: 100%; justify-content: center" :key="i" v-if="i === 'Class' || i === 'BuildCost' || i === 'DestroyCost' || i === 'Crafts' || i === 'EdgeRequirements' || i === 'LaborCost' || i === 'ProximityEmit' || i === 'ProximityDist'">
                 <div style="display: flex; flex-direction: column; justify-content: center; width: 50%; text-align: right; margin-right: 0.5rem;" class="buildingOpenCard">
