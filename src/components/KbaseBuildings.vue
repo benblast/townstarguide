@@ -14,7 +14,7 @@
           </v-card-title>
           <v-card-text style="display: flex; flex-direction: column; justify-content: center; align-items: center">
 
-            <v-img :src="getFullUrl(activeItem.FileUrl)" class="mb-3">
+            <v-img :src="getFullUrl(activeItem.FileUrl)" class="mb-3" width="9rem">
             </v-img>
 
             <template v-for="(item, i) in activeItem">
@@ -44,9 +44,7 @@
     </div>
 
     <v-card class='bigCard'>
-
       <div class='theRow'>
-
         <template v-for='(card, i) in cards'>
           <div :key='i' class='theCard mx-5'>
             <div class='top'>
