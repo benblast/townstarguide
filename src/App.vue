@@ -122,9 +122,11 @@ h1, h2, h3 {
 .appBar {
   height: 10vh;
 }
+
 ul {
   margin-bottom: 1rem;
 }
+
 .logoWrapper {
   height: 100%;
   display: flex;

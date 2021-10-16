@@ -72,13 +72,11 @@ p, ul, li {
 }
 
 a {
-  filter: brightness(150%);
   text-decoration: none;
   color: #636853;
 }
 
 a:hover {
-  filter: brightness(120%);
 }
 
 .firstCardWrapper {
