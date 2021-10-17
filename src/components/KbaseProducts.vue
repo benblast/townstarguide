@@ -37,9 +37,21 @@
           <td>{{ item.CityPoints }}</td>
           <td>{{ item.CityPrice }}</td>
           <td>{{ item.Value1 }} {{ item.Req1 }}<br>{{ item.Value2 }} {{ item.Req2 }}<br>{{ item.Value3 }} {{ item.Req3 }}</td>
-          <td>{{ item.Time0 }}</td>
-          <td>{{ item.Time1 }}</td>
-          <td>{{ item.Time2 }}</td>
+          <td>
+            <v-chip color="#4ca45099">
+              {{ item.Time0 }}
+            </v-chip>
+          </td>
+          <td>
+            <v-chip color="#ffeb3b99">
+              {{ item.Time1 }}
+            </v-chip>
+          </td>
+          <td>
+            <v-chip color="#f4433999">
+              {{ item.Time2 }}
+            </v-chip>
+          </td>
         </tr>
         </tbody>
       </template>
@@ -68,7 +80,6 @@ export default {
       { text: 'Time3', value: 'Time2' },
     ],
     dialog: false,
-    activeItem: {},
     headers: Object.keys(recipes)
   }),
   created() {

@@ -22,7 +22,7 @@
             </li>
           </ul>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
           <h1 class='firstCardTitle' style="text-transform: uppercase; text-align: center;">
             Level up<br>your gameplay
           </h1>
@@ -80,13 +80,14 @@ a:hover {
 }
 
 .firstCardWrapper {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   height: 25rem;
-  margin: 1rem 1rem 0 1rem;
 }
 
 .firstCard {
+
   display: flex;
   flex-direction: column;
   height: 25rem;
@@ -139,7 +140,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 90vw !important;
   }
   .firstCardWrapper {
     height: auto;
@@ -153,6 +153,7 @@ a:hover {
   }
   .cardContent {
     padding: 1rem;
+    height: auto;
   }
 }
 </style>

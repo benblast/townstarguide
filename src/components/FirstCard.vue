@@ -15,7 +15,7 @@
         <p>
           Stay tuned.
         </p>
-        <div style="display: flex; flex-direction: row; justify-content: space-between; padding: 1rem;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; overflow: hidden;">
 
           <p style="width: 5rem; object-fit: contain;">
             <v-img src="../assets/warning-tape.png"
@@ -82,7 +82,6 @@ a:hover {
 }
 .firstCardWrapper {
   display: flex;
-  margin-top: 1rem;
 
 }
 
@@ -123,11 +122,11 @@ a:hover {
 
 
   .firstCardWrapper {
-    width: 90vw;
-    margin: 1rem;
+    width: 100vw;
   }
   .firstCard {
-    width: 90vw;
+    width: 100vw;
+
     display: flex;
     flex-direction: column;
     height: auto;

@@ -1,5 +1,5 @@
 <template>
-  <v-hover v-slot="{ hover }" style="margin: 1rem 1rem 0 0;">
+  <v-hover v-slot="{ hover }" style="margin-top: 1rem;">
     <v-carousel
         hide-delimiter-background
         :show-arrows="false"

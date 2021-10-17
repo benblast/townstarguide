@@ -41,11 +41,15 @@ export default {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a a b b c c" "e d d d d f";
+  gap: 1rem;
   width: 100%;
   font-family: "Grotesk", Helvetica, sans-serif;
 }
 
 @media (max-width: 1400px) {
+  body {
+    width: calc(100vw - (100vw - 100%))!important;
+  }
 
   .landingWrapper {
     display: grid;

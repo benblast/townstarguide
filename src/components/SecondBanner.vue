@@ -57,7 +57,6 @@ a:hover {
 .firstCardWrapper {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 1rem 0 1rem;
   height: 25rem;
 }
 
@@ -86,6 +85,7 @@ a:hover {
 
 @media (max-width: 1400px) {
   .firstCardWrapper {
+    margin: 0;
     height: auto;
   }
   .bannerImg {
@@ -96,11 +96,8 @@ a:hover {
 }
 @media (max-width: 700px) {
 
-  .firstCard {
-    display: flex;
-    flex-direction: column;
-    max-height: fit-content;
-  }
+
+
   .firstCardTitle {
     font-size: 2rem;
     line-height: 2rem;
@@ -108,8 +105,6 @@ a:hover {
   .firstCardSide {
     display: none;
   }
-  .cardContent {
-    padding: 1rem;
-  }
+
 }
 </style>

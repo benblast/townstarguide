@@ -88,11 +88,11 @@ p, ul, li {
 
 .firstCardWrapper {
   display: flex;
-  margin: 1rem 1rem 0 1rem;
-  height: 12rem;
+  height: 50%;
 }
 
 .firstCard {
+  margin-top: 1rem;
   display: flex;
   width: 100%;
 }
@@ -127,7 +127,7 @@ p, ul, li {
 
 @media (max-width: 700px) {
   .firstCardWrapper {
-    width: 90vw;
+    width: 100vw;
   }
   .firstCard {
     display: flex;
