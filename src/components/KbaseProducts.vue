@@ -34,8 +34,8 @@
         >
           <td style="width: 5rem"><v-img :src="getFullUrl(item.FileUrl)" width="5rem"/></td>
           <td style="color: #ffd700; font-size: 1.5rem;">{{ item.Name }}</td>
-          <td>{{ item.CityPoints }}</td>
-          <td>{{ item.CityPrice }}</td>
+          <td><div style="display: flex; align-items: center;">{{ item.CityPoints }}<v-icon size="20px" color="#ffed87">mdi-star</v-icon></div></td>
+          <td><div style="display: flex; align-items: center;">${{ item.CityPrice }}</div></td>
           <td>{{ item.Value1 }} {{ item.Req1 }}<br>{{ item.Value2 }} {{ item.Req2 }}<br>{{ item.Value3 }} {{ item.Req3 }}</td>
           <td>
             <v-chip color="#4ca45099">
