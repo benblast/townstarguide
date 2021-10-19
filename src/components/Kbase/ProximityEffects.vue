@@ -3,36 +3,6 @@
     <v-card class="proxCard">
       <v-card-text style="margin: 0 auto">
 
-        <h1 style="display: flex; justify-content: center; color: gold; margin: 0 auto;">Proximity Effects</h1>
-        <p style="margin-top: 1rem;">
-          TEST Probably the biggest “invisible” factor in Town Star, shade and wind block affect the game in a big way.
-        </p>
-        <p>
-          Shade will affect crops negatively – giving them a longer production timer. The more houses that casts shade on an area, the longer the timer will become.
-        </p>
-
-        <v-expansion-panels
-            style="margin: 2rem 0;"
-          focusable
-        >
-          <v-expansion-panel
-              v-for="(item,i) in proxies"
-              style="background: #63685399;"
-              :key="i"
-          >
-            <v-expansion-panel-header>
-              <h2 style="color: #ffd700; text-stroke: 0.5px black;">{{ item.header }}</h2>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content style="padding-top: 1rem">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <p style="margin: 0">
-                  {{ item.descr }}
-                </p>
-                <v-img :src="item.img" width="13rem" height="13rem" contain />
-              </div>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
         <v-dialog
             v-model="dialog"
             width="500px"
@@ -68,14 +38,99 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
+
+        <h1 style="display: flex; justify-content: center; color: gold; margin: 0 auto;">Proximity Effects</h1>
+        <p style="margin-top: 1rem;">
+          TEST Probably the biggest “invisible” factor in Town Star, shade and wind block affect the game in a big way.
+        </p>
+        <p>
+          Shade will affect crops negatively – giving them a longer production timer. The more houses that casts shade on an area, the longer the timer will become.
+        </p>
       </v-card-text>
-      <v-card-text style="display: flex; align-items: center; flex-direction: column;">
-        <v-img :src="img" width="20rem"></v-img>
-        <div>
-          <v-btn @click="img = sizeProx.small">Small</v-btn>
-          <v-btn @click="img = sizeProx.medium">Medium</v-btn>
-          <v-btn @click="img = sizeProx.large">Large</v-btn>
-          <v-btn @click="img = sizeProx.huge">Huge</v-btn>
+
+      <v-card-text class="shadez">
+        <div style="width: 100%; grid-area: a; border: 1px solid grey; border-radius: 15px; padding: 15px;">
+          <v-tabs
+              v-model="tab"
+              background-color="#63685399"
+              slider-color="#ffd70099"
+              style="border-radius: 16px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;"
+              grow
+          >
+            <v-tab
+                v-for="(item, i) in proxies"
+                :key="i"
+                style="color: gold;"
+            >
+              {{ item.header }}
+            </v-tab>
+          </v-tabs>
+
+          <v-tabs-items v-model="tab">
+            <v-tab-item
+                v-for="(item, i) in proxies"
+                :key="i"
+                transition="slide-x-transition"
+                eager
+                style="height:100%;"
+            >
+              <v-card
+                  color="basil"
+                  flat
+                  style="display: flex; flex-direction: column; justify-content: flex-end;"
+              >
+                <div style="display: flex; justify-content: center; margin: 2rem auto; align-items: center; width: 15rem;">
+                  <v-img :src="item.img" style="margin: 1rem" contain></v-img>
+                </div>
+                <v-card-text style="background-color: #55555599; border-radius: 15px;">
+                  {{ item.descr }}
+                </v-card-text>
+
+
+              </v-card>
+
+            </v-tab-item>
+          </v-tabs-items>
+
+        </div>
+
+        <div style="grid-area: b; margin: 0 auto;">
+          <div style="width: 100%; grid-area: a; border: 1px solid grey; border-radius: 15px; padding: 15px;">
+            <v-tabs
+                v-model="tab2"
+                background-color="#63685399"
+                slider-color="#ffd70099"
+                style="border-radius: 16px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;"
+                grow
+                hide-slider
+            >
+              <v-tab
+                  v-for="(item, i) in sizeProx"
+                  :key="i"
+                  style="color: gold;"
+              >
+                {{ i }}
+              </v-tab>
+            </v-tabs>
+
+            <v-tabs-items v-model="tab2">
+              <v-tab-item
+                  v-for="(item, i) in sizeProx"
+                  :key="i"
+                  transition="slide-x-transition"
+                  eager
+              >
+                <v-card
+                    flat
+                >
+                  <div style="width: 100%; height: 100%; padding: 1rem; display: flex; justify-content: center; align-items: center;">
+                    <v-img :src="item" max-width="25rem" contain></v-img>
+                  </div>
+                </v-card>
+              </v-tab-item>
+            </v-tabs-items>
+          </div>
+
         </div>
       </v-card-text>
     </v-card>
@@ -93,6 +148,8 @@ export default {
     activeItem: {},
     recipes: recipes,
     buildings: buildings,
+    tab: null,
+    tab2: null,
     sizeProx: {
       small: require('../../assets/logo.png'),
       medium: require('../../assets/kbase/medium.png'),
@@ -127,6 +184,7 @@ export default {
 </script>
 
 <style scoped>
+
 div {
   font-family: "Grotesk", Helvetica, sans-serif;
   font-size: 1rem;
@@ -134,6 +192,18 @@ div {
 
 ul, li {
   margin-bottom: 1rem!important;
+}
+
+.expansionImg {
+  width: 13rem;
+  height: 13rem;
+}
+.shadez {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "a a b b";
+  gap: 1rem;
 }
 
 .ghoulButton {
@@ -145,7 +215,7 @@ ul, li {
 }
 
 .proxCard {
-  width: 66vw;
+  width: 75vw;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 20px;
@@ -154,6 +224,18 @@ ul, li {
 @media (max-width: 1400px) {
   .proxCard {
     width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .shadez {
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a a" "b b";
+  }
+  .expansionImg {
+    width: 9rem;
+    height: 9rem;
   }
 }
 </style>

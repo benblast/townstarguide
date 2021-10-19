@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; color: #ffd70099; font-size: 3rem;">
+    <h1 style="display: flex; margin-top: 1rem; justify-content: center; color: #ffd700; font-size: 3rem;">
       Knowledge Base
     </h1>
     <v-card class='bigCard'>
@@ -73,7 +73,7 @@ div {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 3rem;
-  width: 45rem;
+  width: 75vw;
   padding: 1rem;
   padding-bottom: 5rem;
   border-radius: 25px;
@@ -89,7 +89,7 @@ div {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 15rem;
+  width: 25%;
 }
 
 .top {
@@ -118,13 +118,16 @@ div {
 @media (max-width: 800px) {
   .theRow {
     flex-direction: column;
+    align-items: center;
   }
   .bigCard {
+    margin: 7rem 0 3rem 0;
+    width: 100%;
     align-items: center;
   }
   .theCard {
     margin-bottom: 7rem;
-    max-width: 100%;
+    width: 100%;
   }
 }
 

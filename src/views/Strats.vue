@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 style="display: flex; justify-content: center; color: #ffd70099; font-size: 3rem;">
-      STRATEGIES
+    <h1 style="display: flex; margin-top: 1rem; justify-content: center; color: #ffd700; font-size: 3rem;">
+      Strategies
     </h1>
     <v-card class='bigCard'>
 
