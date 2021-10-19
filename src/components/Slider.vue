@@ -55,16 +55,10 @@ export default {
     ],
     slides: [
       {
-        name: 'Changelog',
-        url: require("../assets/ingame/buildings/icon_nuclearPower.png"),
-        descr: 'Latest changelogs displaying the current meta.',
-        link: '/changelog'
-      },
-      {
-        name: 'Got Gas?',
-        url: require("../assets/ingame/products/icon_crudeOil.png"),
-        descr: "This oil is not for cookin'!",
-        link: ''
+        name: 'Proximity Effects',
+        url: require("../assets/kbase/shade.png"),
+        descr: "Shade/Windblock/Pollution, whatever you want to call it.",
+        link: '/kbase/proximity'
       },
       {
         name: 'Newbie Guide',
@@ -77,6 +71,12 @@ export default {
         url: require("../assets/ingame/buildings/icon_cakery.png"),
         descr: "Need info on particular crafts and buildings?",
         link: '/kbase'
+      },
+      {
+        name: 'Changelog',
+        url: require("../assets/ingame/buildings/icon_nuclearPower.png"),
+        descr: 'Latest changelogs displaying the current meta.',
+        link: '/changelog'
       }
     ]
   }),
@@ -112,6 +112,7 @@ a {
 
 .nftImg {
 
+  max-width: 12rem;
 }
 
 .nftText {

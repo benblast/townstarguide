@@ -12,13 +12,14 @@ import StratSugar from '../components/Strat/StratSugar'
 import StratWine from '../components/Strat/StratWine'
 import StratBlueSteel from '../components/Strat/StratBlueSteel'
 import StratUniforms from "../components/Strat/StratUniforms"
-import KbaseBuildings from "../components/KbaseBuildings"
-import KbaseProducts from "../components/KbaseProducts"
+import KbaseBuildings from "../components/Kbase/KbaseBuildings"
+import KbaseProducts from "../components/Kbase/KbaseProducts"
 import Visualizer from '../views/Visualizer'
 import Changelog from "../views/Changelog"
 import Purchase from "../views/Purchase"
 import StratNewPlayer from "../components/Strat/StratNewPlayer"
 import StratImproving from "../components/Strat/StratImproving"
+import ProximityEffects from '../components/Kbase/ProximityEffects'
 
 Vue.use(VueRouter)
 
@@ -117,6 +118,11 @@ const routes = [
     path: '/strats/improving',
     name: 'Improving',
     component: StratImproving
+  },
+  {
+    path: '/kbase/proximity',
+    name: 'ProximityEffects',
+    component: ProximityEffects
   }
 ]
 

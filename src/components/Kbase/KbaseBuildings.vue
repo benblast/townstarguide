@@ -89,7 +89,7 @@
 </template>
 
 <script>
-import { buildings } from "../assets/reqs/buildings"
+import { buildings } from "../../assets/reqs/buildings"
 export default {
   name: 'KbaseBuildings',
   components: {  },
@@ -99,27 +99,27 @@ export default {
     activeItem: {},
     cards: [
       {
-        pic: require('../assets/ingame/buildings/icon_farmHouse.png'),
+        pic: require('../../assets/ingame/buildings/icon_farmHouse.png'),
         head: 'Farm',
       },
       {
-        pic: require('../assets/ingame/buildings/icon_ranchHouse.png'),
+        pic: require('../../assets/ingame/buildings/icon_ranchHouse.png'),
         head: 'Ranch',
       },
       {
-        pic: require('../assets/ingame/buildings/icon_pasture.png'),
+        pic: require('../../assets/ingame/buildings/icon_pasture.png'),
         head: 'Terrain',
       },
       {
-        pic: require('../assets/ingame/buildings/icon_workerHouse.png'),
+        pic: require('../../assets/ingame/buildings/icon_workerHouse.png'),
         head: 'Industrial',
       },
       {
-        pic: require('../assets/ingame/buildings/icon_tradeDepot.png'),
+        pic: require('../../assets/ingame/buildings/icon_tradeDepot.png'),
         head: 'Trade',
       },
       {
-        pic: require('../assets/ingame/buildings/icon_farmBot.png'),
+        pic: require('../../assets/ingame/buildings/icon_farmBot.png'),
         head: 'BlockChain',
       }
     ]

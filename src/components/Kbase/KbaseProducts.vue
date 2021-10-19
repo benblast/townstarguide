@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import { recipes } from "../assets/reqs/recipes"
+import { recipes } from "../../assets/reqs/recipes"
 export default {
   name: 'KbaseProducts',
   components: {  },
