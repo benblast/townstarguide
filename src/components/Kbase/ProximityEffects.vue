@@ -5,7 +5,7 @@
 
         <h1 style="display: flex; justify-content: center; color: gold; margin: 0 auto;">Proximity Effects</h1>
         <p style="margin-top: 1rem;">
-          Probably the biggest “invisible” factor in Town Star, shade and wind block affect the game in a big way.
+          TEST Probably the biggest “invisible” factor in Town Star, shade and wind block affect the game in a big way.
         </p>
         <p>
           Shade will affect crops negatively – giving them a longer production timer. The more houses that casts shade on an area, the longer the timer will become.
