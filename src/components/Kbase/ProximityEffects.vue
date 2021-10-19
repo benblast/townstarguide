@@ -151,10 +151,10 @@ export default {
     tab: null,
     tab2: null,
     sizeProx: {
-      small: require('../../assets/logo.png'),
+      small: require('../../assets/kbase/shade_1.png'),
       medium: require('../../assets/kbase/medium.png'),
-      large: require('../../assets/warning-tape.png'),
-      huge: require('../../assets/tblogo_text.png')
+      large: require('../../assets/kbase/shade_3.png'),
+      huge: require('../../assets/kbase/shade_4.png')
     },
     img: require('../../assets/kbase/medium.png'),
     proxies: [
