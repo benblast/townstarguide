@@ -114,7 +114,7 @@ export default {
       {
         header: 'Pollution',
         descr: 'Buildings such as Refinery and Power Plant emit pollution which negatively affects crops, animals and water wells.',
-        img: require('../../assets/ingame/buildings/icon_windTurbine.png')
+        img: require('../../assets/ingame/buildings/icon_refinery.png')
       }
     ]
   }),
