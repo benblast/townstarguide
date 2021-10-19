@@ -102,7 +102,6 @@
                 slider-color="#ffd70099"
                 style="border-radius: 16px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;"
                 grow
-                hide-slider
             >
               <v-tab
                   v-for="(item, i) in sizeProx"
@@ -156,7 +155,6 @@ export default {
       large: require('../../assets/kbase/shade_3.png'),
       huge: require('../../assets/kbase/shade_4.png')
     },
-    img: require('../../assets/kbase/medium.png'),
     proxies: [
       {
         header: 'Shade',
