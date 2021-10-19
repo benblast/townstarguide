@@ -11,7 +11,7 @@
           <div :key='i' class='theCard mx-5'>
             <div class='top'>
               <div class='circle'>
-                <v-img :src='card.pic'></v-img>
+                <v-img :src='card.pic' contain></v-img>
               </div>
             </div>
             <div class='mid'>
@@ -51,6 +51,12 @@ export default {
         head: 'Products',
         text: "All products and their stats are listed here.",
         link: '/kbase/products'
+      },
+      {
+        pic: require('../assets/kbase/shade.png'),
+        head: 'Prox Fx',
+        text: "Shade, Wind Block, Pollution.",
+        link: '/kbase/proximity'
       }
     ]
   })
@@ -83,7 +89,7 @@ div {
   text-align: center;
   display: flex;
   flex-direction: column;
-  max-width: 15rem;
+  width: 15rem;
 }
 
 .top {
