@@ -8,7 +8,11 @@
         </h3>
         <v-divider class='my-3'></v-divider>
         <div>
-          <div style="color: gold!important">2021-11-08</div>
+          <div style="color: gold!important">2021-11-06</div>
+          <p>Added price tickers for $ETH, $GALA and $TOWN</p>
+        </div>
+        <div>
+          <div style="color: gold!important">2021-11-05</div>
           <p>Updated <router-link to="/kbase/buildings">Buildings</router-link> with new additions (Tesla Coil, Haunted Mansion etc)</p>
         </div>
         <div>
