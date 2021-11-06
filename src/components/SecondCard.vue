@@ -5,7 +5,7 @@
   <div class="firstCardWrapper">
     <v-card class="firstCard" rounded>
       <v-card class="priceCard">
-        <div style="width: 3rem; box-shadow: 3px 3px black; background-color: moccasin; filter: brightness(90%)">
+        <div class="priceImg">
           <v-img :src="prices.eth.image.small" contain></v-img>
         </div>
         <div class="priceWrapper">
@@ -42,7 +42,7 @@
         </div>
       </v-card>
       <v-card class="priceCard">
-        <div style="width: 3rem; box-shadow: 3px 3px black; background-color: moccasin; filter: brightness(90%)">
+        <div class="priceImg">
           <v-img :src="prices.gala.image.small" contain></v-img>
         </div>
         <div class="priceWrapper">
@@ -80,7 +80,7 @@
         </div>
       </v-card>
       <v-card class="priceCard" style="margin-bottom: 0!important;">
-        <div style="width: 3rem; box-shadow: 3px 3px black; background-color: moccasin; filter: brightness(90%)">
+        <div class="priceImg">
           <v-img :src="prices.town.image.small" contain></v-img>
         </div>
         <div class="priceWrapper">
@@ -155,6 +155,13 @@ export default {
 </script>
 
 <style scoped>
+.priceImg{
+  margin-left: 1rem;
+  width: 3rem;
+  box-shadow: 3px 3px black;
+  background-color: moccasin;
+  filter: brightness(90%);
+}
 .priceWrapper {
   display: flex;
   justify-content: space-evenly;
