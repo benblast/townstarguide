@@ -162,7 +162,7 @@ export default {
   width: 100%;
 }
 .priceCard {
-  background-color: #636853;
+  background-color: #333;
   margin-bottom: 1rem;
   padding: 0.5rem;
   display: flex;
