@@ -1,6 +1,6 @@
 let buildings = {
     "ATV": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 50000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -39,9 +39,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Rancher_ATV",
         "FileUrl": "files/assets/31262483/1/icon_ATV.png?t=f18fe305e039247b1921b67b6d7f72c4"
-    },
+},
     "Air_Cargo": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 150000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -80,9 +80,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Cargo_Jet",
         "FileUrl": null
-    },
+},
     "Alfa_Fountain_Good": {
-        "BlockChainID": "0x2000000000000000000000000000000000",
+    "BlockChainID": "0x2000000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -121,9 +121,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/29822691/1/icon_alfaFountainGood.png?t=8ac70af72c64d9a9bda4a40383d04529"
-    },
+},
     "Alfa_Fountain_Great": {
-        "BlockChainID": "0x2100000000000000000000000000000000",
+    "BlockChainID": "0x2100000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -162,9 +162,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/29822692/1/icon_alfaFountainGreat.png?t=38ddc5e1b1ca9f8b313f3b4e1da005ca"
-    },
+},
     "Alfa_Fountain_Majestic": {
-        "BlockChainID": "0x2200000000000000000000000000000000",
+    "BlockChainID": "0x2200000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -203,9 +203,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/29822693/1/icon_alfaFountainMajestic.png?t=d4dc22163d79d7c27964bd8191814600"
-    },
+},
     "Alfa_Fountain_Ok": {
-        "BlockChainID": "0x1f00000000000000000000000000000000",
+    "BlockChainID": "0x1f00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -244,9 +244,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/29591758/1/icon_alfaFountainOK.png?t=f7d371397bbfa57ec906dba39ae8f26a"
-    },
+},
     "Ancient_Bitrue_Wheat": {
-        "BlockChainID": "0x6400000000000000000000000000000000",
+    "BlockChainID": "0x6400000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -285,9 +285,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37506889/1/icon_ancientBitrueWheat.png?t=1c76cedd2d47f7a147cca8ef3a3653ed"
-    },
+},
     "Ancient_Simplex_Sugarcane": {
-        "BlockChainID": "0x8600000000000000000000000000000000",
+    "BlockChainID": "0x8600000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -326,9 +326,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37733319/1/icon_ancientSimplexSugarcane.png?t=5953f5766451aaf95cc72b4cef2b66ef"
-    },
+},
     "Ancient_Tesla_Coil": {
-        "BlockChainID": "0xAncientTeslaCoilTemp",
+    "BlockChainID": "0xAncientTeslaCoilTemp",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -351,7 +351,7 @@ let buildings = {
         "InputPickup": "None",
         "LaborCost": 0,
         "Name": "Ancient_Tesla_Coil",
-        "OutputDeliver": "None",
+        "OutputDeliver": "(Cakery,Fabric_Plant,Mine,Lumber_Mill,Refinery,Steel_Mill,Sand_Mine,Iron_Strip_Mine,Chromium_Strip_Mine,Limestone_Quarry),Warehouse",
         "OutputPickup": "None",
         "PathBase": "500,.25",
         "PathMask": "1000,.5",
@@ -366,9 +366,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Nikole_Tesla"
-    },
+},
     "Arid": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": true,
         "CanSelectCraft": false,
@@ -407,9 +407,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "B_Barter_Station": {
-        "BlockChainID": "0xBBarterStation",
+    "BlockChainID": "0xBBarterStation",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -447,9 +447,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "B1-C3"
-    },
+},
     "Bakery": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 200000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -488,9 +488,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Baker",
         "FileUrl": "files/assets/27093470/1/icon_bakery.png?t=fec337e7652643e61f7626e4611577e0"
-    },
+},
     "Big_Rig": {
-        "BlockChainID": "0xMAYHEMBIGRIG",
+    "BlockChainID": "0xMAYHEMBIGRIG",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -528,9 +528,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Big_Rig_Trucker"
-    },
+},
     "Bitrue_Wheat": {
-        "BlockChainID": "0x4900000000000000000000000000000000",
+    "BlockChainID": "0x4900000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -569,9 +569,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/35830017/1/icon_bitrueWheat.png?t=7f455141f1738fae0916132241f6c66c"
-    },
+},
     "Brine_Storage": {
-        "BlockChainID": "0x012300000000000000000000000000000000",
+    "BlockChainID": "0x012300000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -609,9 +609,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Buggy_Mr_Puddles_Home": {
-        "BlockChainID": "0x019800000000000000000000000000000000",
+    "BlockChainID": "0x019800000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -649,9 +649,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Buggy_Mr_Puddles"
-    },
+},
     "Builder_House": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 2500,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -690,9 +690,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Builder",
         "FileUrl": "files/assets/34583570/1/icon_builderHouse.png?t=7af94d83ecce7fc7d8faf65a13fd360b"
-    },
+},
     "Cabernet_Vines": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 3500,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -731,9 +731,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/43726665/1/icon_cabernetVines.png?t=ca0a03dbe8518f1f25b1a16b612d967d"
-    },
+},
     "Cactus": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -772,9 +772,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "Cakery": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -813,9 +813,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Chef",
         "FileUrl": "files/assets/27093821/1/icon_cakery.png?t=ce35e95b6ab0095b6e1cc800e01de3ff"
-    },
+},
     "Chardonnay_Vines": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1500,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -854,9 +854,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/43726666/1/icon_chardonnayVines.png?t=325371772eb9fa2e63341e933821a7c1"
-    },
+},
     "Chicken_Coop": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 30000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -895,9 +895,9 @@ let buildings = {
         "UTValue": 3,
         "UnitType": "Chicken",
         "FileUrl": "files/assets/27093843/1/icon_chickenCoop.png?t=405c10cf3c32c8d8dcb0030d0dd509af"
-    },
+},
     "Chromium_Strip_Mine": {
-        "BlockChainID": "0xMAYHEMCHROMIUMSTRIPMINE",
+    "BlockChainID": "0xMAYHEMCHROMIUMSTRIPMINE",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -935,9 +935,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Miner_Engineer"
-    },
+},
     "Construction_Site": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -976,9 +976,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "Cotton_Field": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1017,9 +1017,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/24496931/1/icon_cottonField.png?t=84fd0fd88264e105f3dbf9c061f888a6"
-    },
+},
     "CraneBot_Home": {
-        "BlockChainID": "0x5f00000000000000000000000000000000",
+    "BlockChainID": "0x5f00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1058,9 +1058,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "CraneBot",
         "FileUrl": "files/assets/34587157/1/icon_craneBotHome.png?t=aba568542a381f53d2e53a1d540f77d8"
-    },
+},
     "Delivery_Truck": {
-        "BlockChainID": "0xMAYHEMDELTRUCK",
+    "BlockChainID": "0xMAYHEMDELTRUCK",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1098,9 +1098,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Delivery_Driver"
-    },
+},
     "DigiFinex_Cotton": {
-        "BlockChainID": "0x4b00000000000000000000000000000000",
+    "BlockChainID": "0x4b00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1139,9 +1139,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/35830065/1/icon_digifinexCotton.png?t=dfce8fcaa9c9165ec5ec34ea86545490"
-    },
+},
     "Dirt_Road": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1180,9 +1180,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/24496929/1/icon_dirtRoad.png?t=0eeffa9062f981d1d5a912108ab85722"
-    },
+},
     "ElfBot_Home": {
-        "BlockChainID": "0x9600000000000000000000000000000000",
+    "BlockChainID": "0x9600000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1221,9 +1221,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "ElfBot_Season_1",
         "FileUrl": "files/assets/40932602/1/icon_elfBotHome.png?t=ddcdc2bdefb1c010257af3c3bd333ac2"
-    },
+},
     "Epic_Bitrue_Wheat": {
-        "BlockChainID": "0x6200000000000000000000000000000000",
+    "BlockChainID": "0x6200000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1262,9 +1262,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37506888/1/icon_epicBitrueWheat.png?t=fe424f1741e98bf71fb55efd1876fd6b"
-    },
+},
     "Epic_Brine_Storage": {
-        "BlockChainID": "0x012500000000000000000000000000000000",
+    "BlockChainID": "0x012500000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1302,9 +1302,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Epic_Grape_Storage": {
-        "BlockChainID": "0x012900000000000000000000000000000000",
+    "BlockChainID": "0x012900000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1342,9 +1342,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Epic_Simplex_Sugarcane": {
-        "BlockChainID": "0x8400000000000000000000000000000000",
+    "BlockChainID": "0x8400000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1383,9 +1383,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37733321/1/icon_epicSimplexSugarcane.png?t=04e63bdd7db7960c3fd79360044bc7d2"
-    },
+},
     "Epic_Sugarcane_Storage": {
-        "BlockChainID": "0x012d00000000000000000000000000000000",
+    "BlockChainID": "0x012d00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1423,9 +1423,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Epic_Water_Tower": {
-        "BlockChainID": "0x013800000000000000000000000000000000",
+    "BlockChainID": "0x013800000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1463,9 +1463,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Epic_Wheat_Stand": {
-        "BlockChainID": "0x013500000000000000000000000000000000",
+    "BlockChainID": "0x013500000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1503,9 +1503,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Epic_Wheat_Storage": {
-        "BlockChainID": "0x013100000000000000000000000000000000",
+    "BlockChainID": "0x013100000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1543,9 +1543,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Express_Depot": {
-        "BlockChainID": "0x2300000000000000000000000000000000",
+    "BlockChainID": "0x2300000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1584,9 +1584,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Express_Truck",
         "FileUrl": "files/assets/31159160/1/icon_expressDepot.png?t=b46aeabb6dc37f452b55c7a269a5253a"
-    },
+},
     "Fabric_Plant": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -1625,9 +1625,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Weaver",
         "FileUrl": "files/assets/27094290/1/icon_fabricPlant.png?t=1be98e25cf2a2b60d47c0e7c5a44f380"
-    },
+},
     "FarmBot_Home": {
-        "BlockChainID": "0xFarmBotTemp",
+    "BlockChainID": "0xFarmBotTemp",
         "BuildCost": 1250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1666,9 +1666,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "FarmBot",
         "FileUrl": null
-    },
+},
     "Farm_House": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1707,9 +1707,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Farmer",
         "FileUrl": "files/assets/27097298/1/icon_farmHouse.png?t=e0f2a9d7c634e148dbfa19705abd51d7"
-    },
+},
     "Farm_Tractor": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 175000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1748,9 +1748,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Tractor",
         "FileUrl": "files/assets/27097314/1/icon_farmTractor.png?t=4095bac7c6039139acaf81096eb75245"
-    },
+},
     "Feed_Mill": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 5000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -1789,9 +1789,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/28840383/1/icon_feedMill.png?t=112c00184c18c72caac3e6d79316f618"
-    },
+},
     "Forklift": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 125000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1830,9 +1830,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Forklift_Driver",
         "FileUrl": "files/assets/27097354/1/icon_forklift.png?t=7e171c4589396231d6bbbdee20c01e6c"
-    },
+},
     "Freight_Pier": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1871,9 +1871,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Freight_Boat",
         "FileUrl": "files/assets/27097473/1/icon_freightPier.png?t=1665e7571b50c83e5751f15510ad4692"
-    },
+},
     "Fuel_Storage": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 15000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1912,9 +1912,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27135144/1/icon_fuelStorage.png?t=c98704f1cad83ddaf4b8b5ad462fbf13"
-    },
+},
     "Gift_Drone": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -1953,9 +1953,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "Drone",
         "FileUrl": null
-    },
+},
     "Glass_Factory": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 90000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -1994,9 +1994,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Glassmaker",
         "FileUrl": "files/assets/43726663/1/icon_glassFactory.png?t=22585ca9ebdcfae920c1f1f1f555edad"
-    },
+},
     "Grape_Storage": {
-        "BlockChainID": "0x012700000000000000000000000000000000",
+    "BlockChainID": "0x012700000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2034,9 +2034,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Grass": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": true,
         "CanSelectCraft": false,
@@ -2075,9 +2075,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/24496928/1/icon_grass.png?t=4f472cfba7c7b5a87938a51deb233133"
-    },
+},
     "Haunted_Crypt": {
-        "BlockChainID": "0x020000000000000000000000000000000000",
+    "BlockChainID": "0x020000000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2115,9 +2115,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Haunted_East_Wing": {
-        "BlockChainID": "0x020100000000000000000000000000000000",
+    "BlockChainID": "0x020100000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2155,9 +2155,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Haunted_Front_Porch": {
-        "BlockChainID": "0x020300000000000000000000000000000000",
+    "BlockChainID": "0x020300000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -2195,9 +2195,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Headless_Horseman"
-    },
+},
     "Haunted_Graveyard": {
-        "BlockChainID": "0x01ff00000000000000000000000000000000",
+    "BlockChainID": "0x01ff00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2235,9 +2235,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Haunted_Main_Tower": {
-        "BlockChainID": "0x020400000000000000000000000000000000",
+    "BlockChainID": "0x020400000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2275,9 +2275,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Haunted_West_Wing": {
-        "BlockChainID": "0x020200000000000000000000000000000000",
+    "BlockChainID": "0x020200000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2315,9 +2315,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Holiday_Tree": {
-        "BlockChainID": "0xHolidayTreeTemp",
+    "BlockChainID": "0xHolidayTreeTemp",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2356,9 +2356,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/38607494/1/icon_holidayTree.png?t=ddcdc2bdefb1c010257af3c3bd333ac2"
-    },
+},
     "Iron_Strip_Mine": {
-        "BlockChainID": "0xMAYHEMIRONSTRIPMINE",
+    "BlockChainID": "0xMAYHEMIRONSTRIPMINE",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -2396,9 +2396,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Miner_Engineer"
-    },
+},
     "K_Barter_Station": {
-        "BlockChainID": "0xKBarterStation",
+    "BlockChainID": "0xKBarterStation",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -2436,9 +2436,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "KU-1N"
-    },
+},
     "Legendary_Bitrue_Wheat": {
-        "BlockChainID": "0x6300000000000000000000000000000000",
+    "BlockChainID": "0x6300000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2477,9 +2477,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37506887/1/icon_legendaryBitrueWheat.png?t=802ddf7494794feaed62b94e57404615"
-    },
+},
     "Legendary_Brine_Storage": {
-        "BlockChainID": "0x012600000000000000000000000000000000",
+    "BlockChainID": "0x012600000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2517,9 +2517,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Legendary_Grape_Storage": {
-        "BlockChainID": "0x012a00000000000000000000000000000000",
+    "BlockChainID": "0x012a00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2557,9 +2557,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Legendary_Simplex_Sugarcane": {
-        "BlockChainID": "0x8500000000000000000000000000000000",
+    "BlockChainID": "0x8500000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2598,9 +2598,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37733320/1/icon_legendarySimplexSugarcane.png?t=baa5bcbf3d321a090796961db9017fe6"
-    },
+},
     "Legendary_Solar_Panel": {
-        "BlockChainID": "0x01d200000000000000000000000000000000",
+    "BlockChainID": "0x01d200000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2638,9 +2638,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "None"
-    },
+},
     "Legendary_Sugarcane_Storage": {
-        "BlockChainID": "0x012e00000000000000000000000000000000",
+    "BlockChainID": "0x012e00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2678,9 +2678,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Legendary_Tesla_Coil": {
-        "BlockChainID": "0xLegendaryTeslaCoilTemp",
+    "BlockChainID": "0x020800000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -2703,7 +2703,7 @@ let buildings = {
         "InputPickup": "None",
         "LaborCost": 0,
         "Name": "Legendary_Tesla_Coil",
-        "OutputDeliver": "(Cakery,Fabric_Plant,Mine,Lumber_Mill,Refinery,Steel_Mill,Sand_Mine,Iron_Strip_Mine,Chromium_Strip_Mine,Limestone_Quarry)",
+        "OutputDeliver": "(Cakery,Fabric_Plant,Mine,Lumber_Mill,Refinery,Steel_Mill,Sand_Mine,Iron_Strip_Mine,Chromium_Strip_Mine,Limestone_Quarry),Warehouse",
         "OutputPickup": "Home",
         "PathBase": "500,.25",
         "PathMask": "1000,.5",
@@ -2718,9 +2718,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Nikole_Tesla"
-    },
+},
     "Legendary_Water_Tower": {
-        "BlockChainID": "0x013900000000000000000000000000000000",
+    "BlockChainID": "0x013900000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2758,9 +2758,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Legendary_Wheat_Stand": {
-        "BlockChainID": "0x013000000000000000000000000000000000",
+    "BlockChainID": "0x013000000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2798,9 +2798,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Legendary_Wheat_Storage": {
-        "BlockChainID": "0x013200000000000000000000000000000000",
+    "BlockChainID": "0x013200000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2838,9 +2838,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Limestone_Quarry": {
-        "BlockChainID": "0xMAYHEMLIMESTONEQUARRY",
+    "BlockChainID": "0xMAYHEMLIMESTONEQUARRY",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -2878,9 +2878,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Miner_Engineer"
-    },
+},
     "Lumber_Mill": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 50000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -2919,9 +2919,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Millworker",
         "FileUrl": "files/assets/27132410/1/icon_lumberMill.png?t=64cf84c586416b23a7885867bd04e2bd"
-    },
+},
     "Lumber_Yard": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 50000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -2960,9 +2960,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/34585238/1/icon_LumberYard.png?t=cc4b368aa9625213b6ef13b9a661198b"
-    },
+},
     "Lumberjack_House": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 2500,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3001,9 +3001,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Lumberjack",
         "FileUrl": "files/assets/27132449/1/icon_lumberjackHouse.png?t=6c0306a1c47ac3837a496e16d87ace42"
-    },
+},
     "Marsh": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3042,9 +3042,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "Milk_Barn": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 50000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -3083,9 +3083,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Cow",
         "FileUrl": "files/assets/27132514/1/icon_milkBarn.png?t=14d350f351860b9d25ae01b56ec4a272"
-    },
+},
     "Mine": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 25000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -3124,9 +3124,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Miner_Engineer",
         "FileUrl": "files/assets/27132249/1/icon_mine.png?t=877d1d2736c6745814099ff0d815c44f"
-    },
+},
     "Mr_Puddles_Home": {
-        "BlockChainID": "0x019a00000000000000000000000000000000",
+    "BlockChainID": "0x019a00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3164,9 +3164,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "Mr_Puddles"
-    },
+},
     "Neighbor_Delivery": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 15000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3205,9 +3205,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Jimmy",
         "FileUrl": "files/assets/30521497/1/icon_neighborDelivery.png?t=e0959289a774e8139db2d1c5517e7e3b"
-    },
+},
     "Nuclear_Power": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 10000000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -3246,9 +3246,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Nuclear_Engineer",
         "FileUrl": "files/assets/27132609/1/icon_nuclearPower.png?t=4f5c92c2b086114126fff3be7c7df020"
-    },
+},
     "OKEx_Barter_Station": {
-        "BlockChainID": "0xOKexBarterStation",
+    "BlockChainID": "0xOKexBarterStation",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -3286,9 +3286,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "OK-3X"
-    },
+},
     "Oak_Tree_Farm": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3327,9 +3327,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/43726664/1/icon_oakTreeFarm.png?t=4d4f34c905abd963903a8161991d87b4"
-    },
+},
     "Oil_Pump": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1250,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -3368,9 +3368,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27133060/1/icon_oilPump.png?t=79d1db91eef8ca4432387bfe3329754b"
-    },
+},
     "Oil_Seep": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3409,9 +3409,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "Pasture": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 5000,
         "CanBuildUpon": true,
         "CanSelectCraft": false,
@@ -3450,9 +3450,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/28840357/1/icon_pasture.png?t=5bc6fb011e39f2071de2a75999e15dbc"
-    },
+},
     "Paved_Road": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 10000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3491,9 +3491,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27133192/1/icon_pavedRoad.png?t=a34298517411b368875150df59c822f3"
-    },
+},
     "Pinot_Noir_Vines": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 5000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3532,9 +3532,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/43726662/1/icon_pinotNoirVines.png?t=ab3e2d2df9e3e54c1d6fc774e745b2e6"
-    },
+},
     "Pond": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 20000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3573,9 +3573,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27133272/1/icon_pond.png?t=6be8cd432516f492b3b378361ccb440a"
-    },
+},
     "Power_Plant": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 100000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -3614,9 +3614,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Mechanical_Engineer",
         "FileUrl": "files/assets/27133335/1/icon_powerPlant.png?t=699f6c53cf2f0e67fc045ca538d1c790"
-    },
+},
     "Pumpkin_Patch": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3655,9 +3655,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/36897914/1/icon_pumpkinPatch.png?t=0ae37f73ec97a680160a30cc30608280"
-    },
+},
     "Ranch_House": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3696,9 +3696,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Rancher",
         "FileUrl": "files/assets/28840258/1/icon_ranchHouse.png?t=2260863d308bebb5bc8aa63f2bb93783"
-    },
+},
     "Rare_Bitrue_Wheat": {
-        "BlockChainID": "0x6100000000000000000000000000000000",
+    "BlockChainID": "0x6100000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3737,9 +3737,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37506890/1/icon_rareBitrueWheat.png?t=6b727216148372b639d1a6320fe6cf2d"
-    },
+},
     "Rare_Brine_Storage": {
-        "BlockChainID": "0x012400000000000000000000000000000000",
+    "BlockChainID": "0x012400000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3777,9 +3777,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Rare_Grape_Storage": {
-        "BlockChainID": "0x012800000000000000000000000000000000",
+    "BlockChainID": "0x012800000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3817,9 +3817,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Rare_Simplex_Sugarcane": {
-        "BlockChainID": "0x8300000000000000000000000000000000",
+    "BlockChainID": "0x8300000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3858,9 +3858,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/37733322/1/icon_rareSimplexSugarcane.png?t=e51c17a244f0ffe6f29089a63a5a4fd7"
-    },
+},
     "Rare_Solar_Panel": {
-        "BlockChainID": "0x01d100000000000000000000000000000000",
+    "BlockChainID": "0x01d100000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3898,9 +3898,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "None"
-    },
+},
     "Rare_Sugarcane_Storage": {
-        "BlockChainID": "0x012c00000000000000000000000000000000",
+    "BlockChainID": "0x012c00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -3938,9 +3938,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Rare_Tesla_Coil": {
-        "BlockChainID": "0xRareTeslaCoilTemp",
+    "BlockChainID": "0x020700000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -3978,9 +3978,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Rare_Water_Tower": {
-        "BlockChainID": "0x013700000000000000000000000000000000",
+    "BlockChainID": "0x013700000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4018,9 +4018,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Rare_Wheat_Stand": {
-        "BlockChainID": "0x013400000000000000000000000000000000",
+    "BlockChainID": "0x013400000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4058,9 +4058,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Rare_Wheat_Storage": {
-        "BlockChainID": "0x012200000000000000000000000000000000",
+    "BlockChainID": "0x012200000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4098,9 +4098,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Refinery": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 15000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -4139,9 +4139,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Chemical_Engineer",
         "FileUrl": "files/assets/27133374/1/icon_refinery.png?t=7be8f7e57ee27ed2fa5f1438317938c0"
-    },
+},
     "Rock": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4180,9 +4180,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "Salt_Field": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1250,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -4221,9 +4221,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27133806/1/icon_saltField.png?t=3028c95e3a548c70ca32c1f7f4674ace"
-    },
+},
     "SaltyBot_Home": {
-        "BlockChainID": "0xfd00000000000000000000000000000000",
+    "BlockChainID": "0xfd00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4262,9 +4262,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "SaltyBot_Season_1",
         "FileUrl": "files/assets/40948905/1/icon_saltyBotHome.png?t=1a91944861e0cd87ac3963b6a7810ed7"
-    },
+},
     "SaltyBot_Shack": {
-        "BlockChainID": "0xSaltyBotShackTemp",
+    "BlockChainID": "0xSaltyBotShackTemp",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4303,9 +4303,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/44406711/1/icon_saltyBotShack.png?t=1a91944861e0cd87ac3963b6a7810ed7"
-    },
+},
     "Sand_Mine": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 45000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -4344,9 +4344,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/43726661/1/icon_sandMine.png?t=88ebedde9cd3b1ed6eb6cd78321a1cd1"
-    },
+},
     "Scrub": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4385,9 +4385,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "Sheep_Pen": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 40000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -4426,9 +4426,9 @@ let buildings = {
         "UTValue": 3,
         "UnitType": "Sheep",
         "FileUrl": "files/assets/27134180/1/icon_sheepPen.png?t=8d73b92f3f0cf3d472500e3228d33c4c"
-    },
+},
     "Silo": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 10000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4467,9 +4467,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134253/1/icon_silo.png?t=e9fed144537b59d70c4e66f46ad7b497"
-    },
+},
     "Simplex_Sugarcane": {
-        "BlockChainID": "0x4800000000000000000000000000000000",
+    "BlockChainID": "0x4800000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4508,9 +4508,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/35830018/1/icon_simplexSugarcane.png?t=18de83b2da48526b589ed8fe9426ae0b"
-    },
+},
     "Solar_Panel": {
-        "BlockChainID": "0x01d000000000000000000000000000000000",
+    "BlockChainID": "0x01d000000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4548,9 +4548,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 1,
         "UnitType": "None"
-    },
+},
     "Steel_Mill": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 2000000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -4589,9 +4589,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Factory_Worker",
         "FileUrl": "files/assets/27134507/1/icon_steelMill.png?t=76a607082ce2caddcd499a878a1360a7"
-    },
+},
     "Storehouse": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 20000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4630,9 +4630,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134598/1/icon_storehouse.png?t=92c3688fce06fbe89708dacf61b8d7ff"
-    },
+},
     "Sugar_Cane_Field": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4671,9 +4671,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134612/1/icon_sugarCaneField.png?t=6e94ce4c99f53f284879ef78d17f7ff2"
-    },
+},
     "Sugarcane_Storage": {
-        "BlockChainID": "0x012b00000000000000000000000000000000",
+    "BlockChainID": "0x012b00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4711,9 +4711,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Tesla_Coil": {
-        "BlockChainID": "0xTeslaCoilTemp",
+    "BlockChainID": "0x020600000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -4751,9 +4751,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "The_Logger_House": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4792,9 +4792,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Logger",
         "FileUrl": "files/assets/32374941/1/icon_theLoggerHouse.png?t=fea3dbd014a8421bf23b113b68b334cf"
-    },
+},
     "Trade_Depot": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 5000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4833,9 +4833,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Truck",
         "FileUrl": "files/assets/27134633/1/icon_tradeDepot.png?t=ce1eca848365502f06a108906ce10f88"
-    },
+},
     "Trade_Pier": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 10000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4874,9 +4874,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Boat",
         "FileUrl": "files/assets/27134701/1/icon_tradePier.png?t=24ff92f5a659bdc3a4d3c99c89f87688"
-    },
+},
     "Tree": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4915,9 +4915,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": null
-    },
+},
     "Tree_Farm": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 500,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4956,9 +4956,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134707/1/icon_treeFarm.png?t=3fdd808c819e6d123e0d47c6cf3cff82"
-    },
+},
     "Trough": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 5000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -4997,9 +4997,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134720/1/icon_trough.png?t=c43a42dc2d8f1f6c71e38d8e510e82b3"
-    },
+},
     "VOX_Home": {
-        "BlockChainID": "0xVOXHOME",
+    "BlockChainID": "0xVOXHOME",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5037,9 +5037,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Warehouse": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 10000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5078,9 +5078,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134751/1/icon_warehouse.png?t=dc41069df4a96b66e45c67405cf907b2"
-    },
+},
     "Water_Facility": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 10000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -5119,9 +5119,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Waterboy",
         "FileUrl": "files/assets/32462106/1/icon_waterFacility.png?t=547bfce1f08def76cd176010cb6d9f3f"
-    },
+},
     "Water_Pump": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 50000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5160,9 +5160,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134796/1/icon_waterPump.png?t=9445880cc2a873b5296880553357c543"
-    },
+},
     "Water_Tower": {
-        "BlockChainID": "0x013600000000000000000000000000000000",
+    "BlockChainID": "0x013600000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5200,9 +5200,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Well": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1250,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -5241,9 +5241,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134863/1/icon_well.png?t=3f90f1f8984d715c772680fe60d994a9"
-    },
+},
     "Wheat_Field": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 250,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5282,9 +5282,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134876/1/icon_wheatField.png?t=193296b25e16d8cdc9c9cb832a8ad20e"
-    },
+},
     "Wheat_Stand": {
-        "BlockChainID": "0x013300000000000000000000000000000000",
+    "BlockChainID": "0x013300000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5322,9 +5322,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Wheat_Storage": {
-        "BlockChainID": "0x012f00000000000000000000000000000000",
+    "BlockChainID": "0x012f00000000000000000000000000000000",
         "BuildCost": 0,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5362,9 +5362,9 @@ let buildings = {
         "TileWith": "None",
         "UTValue": 0,
         "UnitType": "None"
-    },
+},
     "Wind_Pump": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 25000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -5403,9 +5403,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134913/1/icon_windPump.png?t=2fa79ef83461579b902d44f257bf037b"
-    },
+},
     "Wind_Turbine": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 2500,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -5444,9 +5444,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/27134918/1/icon_windTurbine.png?t=3f6f004f0e6f856aaaee000638db891e"
-    },
+},
     "Windmill": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 15000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -5485,9 +5485,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Miller",
         "FileUrl": "files/assets/27134921/1/icon_windmill.png?t=5a090e8875d63aa66220a0bbc1b8ebbe"
-    },
+},
     "Winery": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 1000000,
         "CanBuildUpon": false,
         "CanSelectCraft": true,
@@ -5526,9 +5526,9 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Vintner",
         "FileUrl": "files/assets/43726667/1/icon_winery.png?t=d3174cc9b593d32f08f86e58b7edb37d"
-    },
+},
     "Wood_Shed": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 5000,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5567,9 +5567,9 @@ let buildings = {
         "UTValue": 0,
         "UnitType": "None",
         "FileUrl": "files/assets/29319325/1/icon_woodShed.png?t=11be99eaabceacd82a3359c6fe835e83"
-    },
+},
     "Worker_House": {
-        "BlockChainID": "None",
+    "BlockChainID": "None",
         "BuildCost": 2500,
         "CanBuildUpon": false,
         "CanSelectCraft": false,
@@ -5608,7 +5608,7 @@ let buildings = {
         "UTValue": 1,
         "UnitType": "Factory_Worker",
         "FileUrl": "files/assets/27134943/1/icon_workerHouse.png?t=f3cafddce3c241fe75efe4f414c67f11"
-    }
+}
 }
 
 module.exports = { buildings }
