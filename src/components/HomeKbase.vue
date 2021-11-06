@@ -140,8 +140,5 @@ p, ul, li {
   .firstCardSide {
     display: none;
   }
-  .cardContent {
-    padding: 1rem;
-  }
 }
 </style>

@@ -2,19 +2,20 @@
   <!--FIRST card START-->
   <div class="firstCardWrapper">
     <v-card class="firstCard" rounded>
-      <v-card-text class="cardContent" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-        <h1 class='firstCardTitle'>
-          Hi
-        </h1>
+      <v-card-text class="cardContent">
+        <h3>
+          Welcome
+        </h3>
+        <v-divider class='my-3'></v-divider>
         <p style="font-style: italic">
           Thanks for putting up with all the bugs and stuff while we build!
         </p>
-        <p>
+        <p style="font-size: 1rem!important;">
           We aim to have all the Strategies and Tools that you need to play Town Star at a high level. Tools are being built. Guides are being written. TOWN is being Earned. Wool is being Rushed.
         </p>
-        <p>
+        <h3 style="color: gold!important; font-size:2rem;">
           Stay tuned.
-        </p>
+        </h3>
       </v-card-text>
     </v-card>
   </div>
@@ -75,8 +76,7 @@ a:hover {
 .firstCardTitle {
   color: moccasin;
   font-weight: 800;
-  line-height: 3rem;
-  font-size: 3.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
 }

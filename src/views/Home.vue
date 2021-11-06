@@ -46,21 +46,19 @@ export default {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a a b b c c" "e d d g g f";
   gap: 1rem;
-  width: 100%;
+  width: 90%!important;
   font-family: "Grotesk", Helvetica, sans-serif;
 }
 
 @media (max-width: 1400px) {
-  body {
-    width: calc(100vw - (100vw - 100%))!important;
-  }
+
 
   .landingWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "b b b" "a a a" "c c c" "e e e" "f f f" "d d d" "g g g";
-    width: 100%;
+    width: 100vw;
     font-family: "Grotesk", Helvetica, sans-serif;
   }
 
