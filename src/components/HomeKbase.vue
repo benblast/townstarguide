@@ -124,21 +124,4 @@ p, ul, li {
     display: none;
   }
 }
-
-@media (max-width: 700px) {
-  .firstCardWrapper {
-    width: 100vw;
-  }
-  .firstCard {
-    display: flex;
-    flex-direction: column;
-  }
-  .firstCardTitle {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  .firstCardSide {
-    display: none;
-  }
-}
 </style>

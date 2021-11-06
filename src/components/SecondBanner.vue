@@ -94,17 +94,4 @@ a:hover {
     max-width: 20rem;
   }
 }
-@media (max-width: 700px) {
-
-
-
-  .firstCardTitle {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .firstCardSide {
-    display: none;
-  }
-
-}
 </style>

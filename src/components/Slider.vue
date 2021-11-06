@@ -138,10 +138,4 @@ a:hover {
     display: none;
   }
 }
-@media (max-width: 700px) {
-  .nftCarousel {
-    max-width: 100%!important;
-    width: 100% !important;
-  }
-}
 </style>

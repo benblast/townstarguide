@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark style="width: 100%!important;">
     <v-app-bar
         app
         height="100%"

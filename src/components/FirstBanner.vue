@@ -94,22 +94,5 @@ a:hover {
     max-width: 20rem;
   }
 }
-@media (max-width: 700px) {
 
-  .firstCard {
-    display: flex;
-    flex-direction: column;
-    max-height: fit-content;
-  }
-  .firstCardTitle {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .firstCardSide {
-    display: none;
-  }
-  .cardContent {
-    padding: 1rem;
-  }
-}
 </style>

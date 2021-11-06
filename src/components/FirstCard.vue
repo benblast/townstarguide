@@ -94,28 +94,4 @@ a:hover {
   }
 }
 
-@media (max-width: 700px) {
-
-
-  .firstCardWrapper {
-    width: 100vw;
-  }
-  .firstCard {
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .firstCardTitle {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .firstCardSide {
-    display: none;
-  }
-  .cardContent {
-    padding: 1rem;
-  }
-}
 </style>
