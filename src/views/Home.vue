@@ -4,6 +4,7 @@
     <Slider class="sliderCard" style="grid-area: b"/>
     <HomeKbase class="homeKbaseCard" style="grid-area: c;"/>
     <FirstBanner class="firstBannerCard" style="grid-area: e"/>
+    <Updates style="grid-area: g"/>
     <FirstCard class="firstCard" style="grid-area: d;"/>
     <SecondBanner class="secondBannerCard" style="grid-area: f"/>
   </div>
@@ -16,6 +17,8 @@ import SecondCard from '../components/SecondCard'
 import HomeKbase from "../components/HomeKbase"
 import FirstBanner from "../components/FirstBanner"
 import SecondBanner from "../components/SecondBanner"
+import Updates from "../components/Updates"
+
 export default {
   components: {
     FirstCard,
@@ -23,7 +26,8 @@ export default {
     SecondCard,
     HomeKbase,
     FirstBanner,
-    SecondBanner
+    SecondBanner,
+    Updates
   },
   data: () => ({
     hello: true
@@ -40,7 +44,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "a a b b c c" "e d d d d f";
+  grid-template-areas: "a a b b c c" "e d d g g f";
   gap: 1rem;
   width: 100%;
   font-family: "Grotesk", Helvetica, sans-serif;
@@ -55,7 +59,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "b b b" "a a a" "c c c" "e e e" "f f f" "d d d";
+    grid-template-areas: "b b b" "a a a" "c c c" "e e e" "f f f" "d d d" "g g g";
     width: 100%;
     font-family: "Grotesk", Helvetica, sans-serif;
   }

@@ -56,7 +56,7 @@ export default {
         web3 = new Web3(window.ethereum)
         const tx = await web3.eth.sendTransaction({
           from: accounts[0],
-          to: '0xBF929281d912a4556d1bC463209E62705f0f6438',
+          to: '',
           value: '100000000000000'
         }, async function(error, hash) {
           if(error) {
@@ -66,7 +66,7 @@ export default {
             try {
               await axios.post('http://localhost:5000/api/eth/thepost/', {
                 tx: hash,
-                email: 'dr.fingol@gmail.com'
+                email: ''
               })
             } catch(e) {
               console.log(e.message)
@@ -85,12 +85,12 @@ export default {
     async checkThings() {
       let web3;
       web3 = await new Web3(window.ethereum)
-      const valueOfTx = await web3.eth.getTransaction('0xa4202d9e8ddc1b57012da40be2b557c9bf9ed0bf0c5539a2ece394a18606dbc4')
+      const valueOfTx = await web3.eth.getTransaction('')
       console.log(valueOfTx.value)
 
       await axios.post('http://localhost:5000/api/eth/thepost/', {
-        tx: "0x1997be665c84086b6a31287a7a24cc85c361e644f934f0d5996f284afd69a32b",
-        email: 'dr.fingol@gmail.com'
+        tx: "",
+        email: ''
       })
     }
   }

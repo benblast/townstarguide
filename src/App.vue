@@ -163,7 +163,7 @@ ul {
 
 @media (max-width: 1400px) {
   .appBar {
-    width: 100vw;
+    width: 100%;
   }
   .logoWrapper {
     display: none;

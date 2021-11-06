@@ -10,35 +10,11 @@
           Thanks for putting up with all the bugs and stuff while we build!
         </p>
         <p>
-          Soon we will have all the Strategies and Tools that you need to play Town Star at a high level. Tools are being built. Guides are being written. Noobs are being Pwned. TC is being Earned. Wool is being Rushed.
+          We aim to have all the Strategies and Tools that you need to play Town Star at a high level. Tools are being built. Guides are being written. TOWN is being Earned. Wool is being Rushed.
         </p>
         <p>
           Stay tuned.
         </p>
-        <div style="display: flex; flex-direction: row; justify-content: space-between; overflow: hidden;">
-
-          <p style="width: 5rem; object-fit: contain;">
-            <v-img src="../assets/warning-tape.png"
-                   contain
-            />
-          </p>
-          <p style="width: 5rem; object-fit: contain;">
-            <v-img src="../assets/warning-tape.png"
-                   contain
-            />
-          </p>
-          <p style="width: 5rem; object-fit: contain;">
-            <v-img src="../assets/warning-tape.png"
-                   contain
-            />
-          </p>
-          <p style="width: 5rem; object-fit: contain;">
-            <v-img src="../assets/warning-tape.png"
-                   contain
-            />
-          </p>
-
-        </div>
       </v-card-text>
     </v-card>
   </div>
