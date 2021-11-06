@@ -4,7 +4,7 @@
     <v-card class="firstCard" rounded>
       <v-card-text class="cardContent">
         <h3>
-          Welcome
+          WELCOME
         </h3>
         <v-divider class='my-3'></v-divider>
         <p style="font-style: italic">
