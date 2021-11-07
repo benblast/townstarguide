@@ -6,7 +6,7 @@
     <v-card class="firstCard" rounded>
       <v-card class="priceCard">
         <div class="priceImg">
-          <v-img :src="prices.eth.image.small" contain></v-img>
+          <v-img :src="prices.eth.image.small ? prices.eth.image.small : 'https://assets.coingecko.com/coins/images/279/small/ethereum.png'" contain></v-img>
         </div>
         <div class="priceWrapper">
           <div>
@@ -43,7 +43,7 @@
       </v-card>
       <v-card class="priceCard">
         <div class="priceImg">
-          <v-img :src="prices.gala.image.small" contain></v-img>
+          <v-img :src="prices.gala.image.small ? prices.gala.image.small : ''" contain></v-img>
         </div>
         <div class="priceWrapper">
           <div>
@@ -81,7 +81,7 @@
       </v-card>
       <v-card class="priceCard" style="margin-bottom: 0!important;">
         <div class="priceImg">
-          <v-img :src="prices.town.image.small" contain></v-img>
+          <v-img :src="prices.town.image.small ? prices.town.image.small : ''" contain></v-img>
         </div>
         <div class="priceWrapper">
           <div>
@@ -139,17 +139,16 @@ export default {
 
     }
   },
-  async mounted() {
-    const result = await axios.get('https://api.coingecko.com/api/v3/coins/gala')
-    console.log(result.data)
-    const result2 = await axios.get('https://api.coingecko.com/api/v3/coins/ethereum')
-    console.log(result2.data)
-    const result3 = await axios.get('https://api.coingecko.com/api/v3/coins/town-star')
-    console.log(result3.data)
-
-    this.prices.gala = result.data
-    this.prices.eth = result2.data
-    this.prices.town = result3.data
+  mounted() {
+    axios.get('https://api.coingecko.com/api/v3/coins/gala').then(res => {
+      this.prices.gala = res.data
+    })
+    axios.get('https://api.coingecko.com/api/v3/coins/ethereum').then(res => {
+      this.prices.eth = res.data
+    })
+    axios.get('https://api.coingecko.com/api/v3/coins/town-star').then(res => {
+      this.prices.town = res.data
+    })
   }
 }
 </script>
