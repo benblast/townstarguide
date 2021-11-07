@@ -129,9 +129,9 @@ export default {
   data: () => ({
     hello: true,
     prices: {
-      eth: {},
-      gala: {},
-      town: {}
+      eth: { image: { small: '' }, market_data: { current_price: { usd: 0 }, price_change_percentage_24h: 0, low_24h: { usd: 0 }, high_24h: { usd: 0 } } },
+      gala: { image: { small: '' }, market_data: { current_price: { usd: 0 }, price_change_percentage_24h: 0, low_24h: { usd: 0 }, high_24h: { usd: 0 } } },
+      town: { image: { small: '' }, market_data: { current_price: { usd: 0 }, price_change_percentage_24h: 0, low_24h: { usd: 0 }, high_24h: { usd: 0 } } }
     }
   }),
   methods: {
