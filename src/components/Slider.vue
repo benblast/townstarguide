@@ -71,12 +71,6 @@ export default {
         url: require("../assets/ingame/buildings/icon_cakery.png"),
         descr: "Need info on particular crafts and buildings?",
         link: '/kbase'
-      },
-      {
-        name: 'Changelog',
-        url: require("../assets/ingame/buildings/icon_nuclearPower.png"),
-        descr: 'Latest changelogs displaying the current meta.',
-        link: '/changelog'
       }
     ]
   }),

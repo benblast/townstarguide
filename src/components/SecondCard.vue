@@ -6,7 +6,7 @@
     <v-card class="firstCard" rounded>
       <v-card class="priceCard">
         <div class="priceImg">
-          <v-img :src="prices.eth.image.small ? prices.eth.image.small : 'https://assets.coingecko.com/coins/images/279/small/ethereum.png'" contain></v-img>
+          <v-img :src="prices.eth.image.small" contain></v-img>
         </div>
         <div class="priceWrapper">
           <div>
@@ -129,7 +129,7 @@ export default {
   data: () => ({
     hello: true,
     prices: {
-      eth: { image: { small: '' }, market_data: { current_price: { usd: 0 }, price_change_percentage_24h: 0, low_24h: { usd: 0 }, high_24h: { usd: 0 } } },
+      eth: { image: { small: 'https://assets.coingecko.com/coins/images/279/small/ethereum.png' }, market_data: { current_price: { usd: 0 }, price_change_percentage_24h: 0, low_24h: { usd: 0 }, high_24h: { usd: 0 } } },
       gala: { image: { small: '' }, market_data: { current_price: { usd: 0 }, price_change_percentage_24h: 0, low_24h: { usd: 0 }, high_24h: { usd: 0 } } },
       town: { image: { small: '' }, market_data: { current_price: { usd: 0 }, price_change_percentage_24h: 0, low_24h: { usd: 0 }, high_24h: { usd: 0 } } }
     }

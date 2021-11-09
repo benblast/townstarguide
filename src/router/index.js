@@ -14,8 +14,6 @@ import StratBlueSteel from '../components/Strat/StratBlueSteel'
 import StratUniforms from "../components/Strat/StratUniforms"
 import KbaseBuildings from "../components/Kbase/KbaseBuildings"
 import KbaseProducts from "../components/Kbase/KbaseProducts"
-import Visualizer from '../views/Visualizer'
-import Changelog from "../views/Changelog"
 import Purchase from "../views/Purchase"
 import StratNewPlayer from "../components/Strat/StratNewPlayer"
 import StratImproving from "../components/Strat/StratImproving"
@@ -93,16 +91,6 @@ const routes = [
     path: '/kbase/products',
     name: 'Products',
     component: KbaseProducts
-  },
-  {
-    path: '/visualizer',
-    name: 'Visualizer',
-    component: Visualizer
-  },
-  {
-    path: '/changelog',
-    name: 'Changelog',
-    component: Changelog
   },
   {
     path: '/purchase',
