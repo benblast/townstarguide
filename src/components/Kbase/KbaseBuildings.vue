@@ -15,6 +15,14 @@
           <v-card-text style="display: flex; flex-direction: column; justify-content: center; align-items: center">
             <v-img :src="getFullUrl(activeItem.FileUrl)" class="mb-3" width="9rem">
             </v-img>
+            <div style="margin-bottom: 1rem; display: flex; flex-direction: column; align-items: center" v-if="activeItem.BlockChainID !== 'None'">
+              <h3 style="margin-bottom: 1rem;">
+                VOX EARNINGS
+              </h3>
+              <h3 style="color: gold; font-size: 2rem;">
+                {{ base_earnings[activeItem.BlockChainID] }}
+              </h3>
+            </div>
             <template v-for="(item, i) in activeItem">
               <div style="display: flex; width: 100%; justify-content: center" :key="i" v-if="i === 'Class' || i === 'BuildCost' || i === 'DestroyCost' || i === 'Crafts' || i === 'EdgeRequirements' || i === 'LaborCost' || i === 'ProximityEmit' || i === 'ProximityDist'">
                 <div style="display: flex; flex-direction: column; justify-content: center; width: 50%; text-align: right; margin-right: 0.5rem;" class="buildingOpenCard">
@@ -90,11 +98,13 @@
 
 <script>
 import { buildings } from "../../assets/reqs/buildings"
+import { base_earnings } from "../../assets/reqs/base_earnings"
 export default {
   name: 'KbaseBuildings',
   components: {  },
   data: () => ({
     building: buildings,
+    base_earnings: base_earnings,
     dialog: false,
     activeItem: {},
     cards: [
