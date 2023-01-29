@@ -10,48 +10,12 @@
       <div class="logoWrapper">
         <div class="logo">
           <v-img
-              :src="require('./assets/tblogo_text.png')"
+              :src="require('./assets/coinblaster_3.png')"
               contain
               class="logoimg"
           />
         </div>
       </div>
-
-      <v-tabs
-          fixed-tabs
-          hide-slider
-          slider-size="0px"
-          color="grey darken-1"
-          class="theMenu"
-      >
-        <v-tab
-            v-for="(item, i) in tabs"
-            :key="i"
-            :to="item.to"
-            :icon="item.icon"
-            class="menu-tabs"
-        >
-          <div class="tab">
-            <v-icon
-                size="50"
-                color="#FFFFFF99"
-                style="margin-bottom: 0.3rem"
-                class="tab-icon"
-            >
-              {{ item.icon }}
-            </v-icon>
-            <div class="menu-title">{{ item.title }}</div>
-          </div>
-        </v-tab>
-      </v-tabs>
-
-      <div class="spacer">
-        <v-btn href="https://discord.gg/C7VAZrYAd3" style="height: 3rem; margin-bottom: 0.5rem; background: #636853; color: #ffffff!important;">
-          Join Our Discord!
-          <v-img src="./assets/ingame/buildings/icon_nuclearEngineer.png" width="80" style="margin-left: 1rem;"></v-img>
-        </v-btn>
-      </div>
-
     </v-app-bar>
 
     <v-main>
@@ -164,12 +128,6 @@ ul {
 @media (max-width: 1400px) {
   .appBar {
     width: 100%;
-  }
-  .logoWrapper {
-    display: none;
-  }
-  .logo {
-    width: 10rem;
   }
   .menu-tabs {
     width: auto;
